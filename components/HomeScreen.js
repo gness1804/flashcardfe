@@ -17,6 +17,18 @@ class HomeScreen extends Component {
             navigate('HTML')
           }}
         />
+        <Button
+          title="CSS"
+          onPress={() => {
+            navigate('CSS')
+          }}
+        />
+        <Button
+          title="JS"
+          onPress={() => {
+            navigate('JS')
+          }}
+        />
       </View>
     );
   }
