@@ -21,6 +21,17 @@ class BasicStuff extends Component {
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => {
+            navigate('Answer', { question: answers.inlineBlock })
+          }}
+        >
+          <Text
+            style={styles.text}
+          >
+          What is the difference between inline, inline-block, and block elements?
+        </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
             navigate('Home')
           }}
         >
