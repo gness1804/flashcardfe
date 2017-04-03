@@ -7,6 +7,7 @@ import Accessibility from './Accessibility';
 import Answer from './Answer';
 import OtherHTML from './OtherHTML';
 import BasicStuff from './BasicStuff';
+import AdvancedStuff from './AdvancedStuff';
 
 const Navigation = StackNavigator({
   Home: { screen: HomeScreen },
@@ -17,6 +18,7 @@ const Navigation = StackNavigator({
   Answer: { screen: Answer },
   OtherHTML: { screen: OtherHTML },
   BasicStuff: { screen: BasicStuff },
+  AdvancedStuff: { screen: AdvancedStuff },
 });
 
 export default Navigation;

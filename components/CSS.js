@@ -19,6 +19,14 @@ class CSS extends Component {
             }}
           />
         </View>
+        <View style={styles.button}>
+          <Button
+            title="More Advanced Stuff"
+            onPress={() => {
+              navigate('AdvancedStuff')
+            }}
+          />
+        </View>
         <TouchableOpacity
           onPress={() => {
             navigate('Home')

@@ -11,7 +11,7 @@ class Accessibility extends Component {
   render() {
     const { navigate } = this.props.navigation;
     return (
-      <View>
+      <View style={styles.container}>
         <TouchableOpacity
           onPress={() => {
             navigate('Answer', { question: answers.aria })

@@ -56,6 +56,19 @@ const answers = {
     thirdPoint: 'External: CSS is in an external .css file and linked in HTML document with `<link>` tags.',
     fourthPoint: 'External styling is best because it allows developers to keep the styling separate from the HTML. This helps with readability and maintainability.',
   },
+  floatChallenge: {
+    main: 'You can use overflow: auto and clearfix.',
+    firstPoint: 'on the containing element => overflow: auto;',
+    secondPoint: `using a clearfix:
+    .clearfix:after {
+      content: ".";
+      visibility: hidden;
+      display: block;
+      height: 0;
+      clear: both;
+}
+    `,
+  },
 }
 
 export default answers

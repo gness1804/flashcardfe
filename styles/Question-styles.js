@@ -1,4 +1,8 @@
 const styles = {
+  container: {
+    paddingLeft: 10,
+    paddingRight: 10,
+  },
   homeButton: {
     alignSelf: 'center',
     height: 100,
