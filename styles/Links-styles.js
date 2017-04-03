@@ -1,14 +1,19 @@
 const styles = {
-  // button: {
-  //   marginBottom: 30,
-  //   paddingLeft: 30,
-  //   paddingRight: 30,
-  // },
+  container: {
+    paddingLeft: 10,
+    paddingRight: 10,
+  },
   homeButton: {
     alignSelf: 'center',
     height: 100,
     marginTop: 400,
     width: 100,
+  },
+  text: {
+    color: 'rgb(53, 78, 212)',
+    fontSize: 22,
+    marginTop: 50,
+    textAlign: 'center',
   },
 }
 

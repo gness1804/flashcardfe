@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
-import { ScrollView, Button, TouchableOpacity, Image } from 'react-native';
+import {
+  ScrollView,
+  TouchableOpacity,
+  Image,
+  Linking,
+  Text,
+  } from 'react-native';
 import styles from '../styles/Links-styles';
 
 class Links extends Component {
@@ -10,8 +16,18 @@ class Links extends Component {
   render() {
     const { navigate } = this.props.navigation
     return (
-      <ScrollView>
-
+      <ScrollView style={styles.container}>
+        <TouchableOpacity
+          onPress={() => {
+            Linking.openURL('http://dom.events/')
+          }}
+        >
+          <Text
+            style={styles.text}
+          >
+          DOM Events
+        </Text>
+        </TouchableOpacity>
         <TouchableOpacity
           onPress={() => {
             navigate('Home')
