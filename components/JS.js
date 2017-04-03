@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { View, Button, TouchableOpacity, Image } from 'react-native';
+import styles from '../styles/JS-styles';
+import homeButtonStyles from '../styles/HomeButton-Styles';
 
 class JS extends Component {
   static navigationOptions = {
@@ -7,9 +9,44 @@ class JS extends Component {
   }
 
   render() {
+    const { navigate } = this.props.navigation
     return (
       <View>
-        <Text>I am the JS Component.</Text>
+        <View style={styles.button}>
+          <Button
+            title="Foundations"
+            onPress={() => {
+              navigate('')
+            }}
+          />
+        </View>
+        <View style={styles.button}>
+          <Button
+            title="Intermediate"
+            onPress={() => {
+              navigate('')
+            }}
+          />
+        </View>
+        <View style={styles.button}>
+          <Button
+            title="Advanced"
+            onPress={() => {
+              navigate('')
+            }}
+          />
+        </View>
+
+        <TouchableOpacity
+          onPress={() => {
+            navigate('Home')
+          }}
+        >
+          <Image
+            source={require('../images/home.png')}
+            style={homeButtonStyles.homeButton}
+          />
+        </TouchableOpacity>
       </View>
     );
   }
