@@ -45,7 +45,30 @@ class BasicStuff extends Component {
           <Text
             style={styles.text}
           >
-          What is the difference between a relative, fixed, absolute and statically positioned element?
+          What is the difference between a
+          relative, fixed, absolute and statically positioned element?
+        </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            navigate('Answer', { question: answers.mediaQueries })
+          }}
+        >
+          <Text
+            style={styles.text}
+          >
+        What are Media Queries?
+        </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            navigate('Answer', { question: answers.applyStyles })
+          }}
+        >
+          <Text
+            style={styles.text}
+          >
+          Explain the 3 main ways to apply CSS styles to a Web page:
         </Text>
         </TouchableOpacity>
         <TouchableOpacity

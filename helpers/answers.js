@@ -44,6 +44,18 @@ const answers = {
     firstLinkName: 'MDN Docs on CSS Positioning',
     firstLinkURL: 'https://developer.mozilla.org/en-US/docs/Web/CSS/position',
   },
+  mediaQueries: {
+    main: 'A CSS3 Module that allows content rendering to adapt to conditions such as screen resolutions.',
+    firstPoint: 'Used in *Adaptive Page Layouts*: An adaptive layout uses CSS media queries to detect the width of the browser and make layout adjustments accordingly. Unlike liquid layouts, adaptive layouts use fixed units like pixels to define widths. They behave like a series of static layouts defined by specific media queries.',
+    secondPoint: '*Responsive Page Layouts* are best: A true responsive page layout combines the best parts of a liquid layout and an adaptive layout to create the best experience for your users as they move between devices and screen sizes. By using both relative units and media queries, a responsive site allows us to transition through screen sizes seamlessly and effortlessly.',
+  },
+  applyStyles: {
+    main: 'Inline styling, embedded styling, and external (or stylesheet) styling.',
+    firstPoint: 'Inline: use very sparingly. Done by inserting a "style" attribute inside an HTML element.',
+    secondPoint: 'Embedded: insert a `<style>` tag in head of HTML document and write the styles directly there.',
+    thirdPoint: 'External: CSS is in an external .css file and linked in HTML document with `<link>` tags.',
+    fourthPoint: 'External styling is best because it allows developers to keep the styling separate from the HTML. This helps with readability and maintainability.',
+  },
 }
 
 export default answers
