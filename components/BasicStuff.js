@@ -39,6 +39,17 @@ class BasicStuff extends Component {
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => {
+            navigate('Answer', { question: answers.positioning })
+          }}
+        >
+          <Text
+            style={styles.text}
+          >
+          What is the difference between a relative, fixed, absolute and statically positioned element?
+        </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
             navigate('Home')
           }}
         >
