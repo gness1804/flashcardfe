@@ -95,6 +95,13 @@ const answers = {
           background: #00ff00 url("smiley.gif") no-repeat fixed center;
       }`,
   },
+  hideContent: {
+    main: 'There are several ways to hide content, ranging from the CSS display property to using creative indentation and positioning. Note: not all of these make the content available to screen readers.',
+    firstPoint: 'display:none. Probably the most obvious and intuitive. However, this makes the content unavailable to screen readers.',
+    secondPoint: 'text-indent: -1000px This will allow the content to be visible off screen and thus accessible to screen readers.',
+    thirdPoint: 'clip: rect(1px, 1px, 1px, 1px) Clips content that will not fit in a 1px area. Available to screen readers.',
+    fourthPoint: 'position:absolute; left:-10000px; overflow:hidden; : Absolutely position element off screen. Available to screen readers.',
+  },
 }
 
 export default answers

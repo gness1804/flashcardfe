@@ -81,6 +81,18 @@ class AdvancedStuff extends Component {
           Why and how are shorthand properties used?
         </Text>
         </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            navigate('Answer', { question: answers.hideContent })
+          }}
+        >
+          <Text
+            style={styles.text}
+          >
+          What are the different ways to visually hide
+          content (and make it available only for screen readers)?
+        </Text>
+        </TouchableOpacity>
 
         <TouchableOpacity
           onPress={() => {
