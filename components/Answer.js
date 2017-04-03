@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Button, Text } from 'react-native';
+import { View, Text } from 'react-native';
 // import styles from '../styles/HTML-styles';
 
 class Answer extends Component {
@@ -7,11 +7,19 @@ class Answer extends Component {
     title: 'Answer',
   }
 
+  constructor(props) {
+    super(props)
+    this.state = {
+      entireQuestion: this.props.navigation.state.params.question,
+      main: this.props.navigation.state.params.question.main,
+    }
+  }
+
   render() {
-    const { navigate } = this.props.navigation
+    const { entireQuestion, main } = this.state
     return (
       <View>
-        <Text>I am an answer.</Text>
+        <Text>{main}</Text>
       </View>
     );
   }
