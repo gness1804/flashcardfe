@@ -32,6 +32,13 @@ class BasicStuff extends Component {
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => {
+            navigate('Answer', { question: answers.zIndex })
+          }}
+        >
+          <Text style={styles.text}>What is the z-index? How is it used?</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
             navigate('Home')
           }}
         >

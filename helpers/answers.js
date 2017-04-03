@@ -31,6 +31,10 @@ const answers = {
     firstLinkName: 'Stack Overflow post on inline versus inline-block',
     firstLinkURL: 'https://stackoverflow.com/questions/8969381/what-is-the-difference-between-display-inline-and-display-inline-block',
   },
+  zIndex: {
+    main: 'The z-index specifies the stacking order of positioned elements. Lowest z-index will be on the bottom and highest on the top',
+    firstPoint: 'It can take the following values: **Auto**: Sets stack order equal to its parents; **Number**: Orders the stack order; **Initial**: Sets to default value of 0; and **Inherit**: Inherits from its parent element.',
+  },
 }
 
 export default answers
