@@ -27,6 +27,14 @@ class HTML extends Component {
             }}
           />
         </View>
+        <View style={styles.button}>
+          <Button
+            title="Go Home"
+            onPress={() => {
+              navigate('Home')
+            }}
+          />
+        </View>
       </View>
     );
   }
