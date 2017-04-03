@@ -25,7 +25,16 @@ class Answer extends Component {
   }
 
   render() {
-    const { main, firstPoint, secondPoint, thirdPoint, fourthPoint, firstLinkName, firstLinkURL, secondLinkName, secondLinkURL } = this.state
+    const { main,
+            firstPoint,
+            secondPoint,
+            thirdPoint,
+            fourthPoint,
+            firstLinkName,
+            firstLinkURL,
+            secondLinkName,
+            secondLinkURL,
+            } = this.state
     return (
       <ScrollView style={styles.container}>
         <Text style={styles.main}>{main}</Text>

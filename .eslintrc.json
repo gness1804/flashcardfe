@@ -20,7 +20,8 @@
     "jsx-a11y/no-static-element-interactions": "off",
 		"react/jsx-no-bind": "off",
     "semi": "off",
-    "react/no-unescaped-entities": "off"
+    "react/no-unescaped-entities": "off",
+    "no-tabs": "off"
   },
   "parser": "babel-eslint"
 }
