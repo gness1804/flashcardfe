@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Text, Navigator, TouchableHighlight, View, Button } from 'react-native';
-import { StackNavigator } from 'react-navigation';
+import { View, Button } from 'react-native';
 
 class HomeScreen extends Component {
   static navigationOptions = {

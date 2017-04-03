@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, Navigator, TouchableHighlight, View, Button } from 'react-native';
+import { Text, View } from 'react-native';
 
 class CSS extends Component {
   static navigationOptions = {
