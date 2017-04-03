@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, Linking } from 'react-native';
 // import styles from '../styles/HTML-styles';
 
 class Answer extends Component {
@@ -17,18 +17,32 @@ class Answer extends Component {
       thirdPoint: this.props.navigation.state.params.question.thirdPoint,
       fourthPoint: this.props.navigation.state.params.question.fourthPoint,
       image: this.props.navigation.state.params.question.image,
+      firstLinkName: this.props.navigation.state.params.question.firstLinkName,
+      firstLinkURL: this.props.navigation.state.params.question.firstLinkURL,
+      secondLinkName: this.props.navigation.state.params.question.secondLinkName,
+      secondLinkURL: this.props.navigation.state.params.question.secondLinkURL,
     }
   }
 
   render() {
-    const { main, firstPoint, secondPoint, thirdPoint, fourthPoint, image } = this.state
+    const { main, firstPoint, secondPoint, thirdPoint, fourthPoint, image, firstLinkName, firstLinkURL, secondLinkName, secondLinkURL } = this.state
     return (
       <View>
         <Text>{main}</Text>
-        {firstPoint ? <Text>{firstPoint}</Text> : ''}
-        {secondPoint ? <Text>{secondPoint}</Text> : ''}
-        {thirdPoint ? <Text>{thirdPoint}</Text> : ''}
-        {fourthPoint ? <Text>{fourthPoint}</Text> : ''}
+        <Text>{firstPoint}</Text>
+        <Text>{secondPoint}</Text>
+        <Text>{thirdPoint}</Text>
+        <Text>{fourthPoint}</Text>
+        <Text
+          onPress={() => { Linking.openURL(`${firstLinkURL}`) }}
+        >
+          {firstLinkName}
+        </Text>
+        <Text
+          onPress={() => { Linking.openURL(`${secondLinkURL}`) }}
+        >
+          {secondLinkName}
+        </Text>
       </View>
     );
   }

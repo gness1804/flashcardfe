@@ -6,6 +6,21 @@ const answers = {
     thirdPoint: 'Alt Tags: Use on images. Be verbose. <img src="mountain.jpg" alt="The cascade mountains at sunset in January" />',
     fourthPoint: 'ARIA Roles: Define the purpose of an element. Each element can only have one ARIA role at a time',
   },
+  attr: {
+    main: 'data-* attributes allow us to store extra information on standard, semantic HTML elements.',
+    firstPoint: `Syntax:
+    	<article
+      id="electriccars"
+      data-columns="3"
+      data-index-number="12314"
+      data-parent="cars">
+...
+</article>`,
+    firstLinkName: 'CSS Tricks: Attribute Selectors',
+    firstLinkURL: 'https://css-tricks.com/almanac/selectors/a/attribute/',
+    secondLinkName: 'MDN: Using Data Attributes',
+    secondLinkURL: 'https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes',
+  },
 }
 
 export default answers
