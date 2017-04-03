@@ -21,7 +21,8 @@
 		"react/jsx-no-bind": "off",
     "semi": "off",
     "react/no-unescaped-entities": "off",
-    "no-tabs": "off"
+    "no-tabs": "off",
+    "global-require": "off"
   },
   "parser": "babel-eslint"
 }
