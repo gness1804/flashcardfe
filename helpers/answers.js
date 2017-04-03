@@ -21,6 +21,10 @@ const answers = {
     secondLinkName: 'MDN: Using Data Attributes',
     secondLinkURL: 'https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes',
   },
+  boxModel: {
+    main: 'Each element is a rectangular box. CSS leverages “the box model” to control layout and design. An HTML element is comprised of its content and the margins, borders, padding surrounding it. Boxes are “stacked” in the order they appear in your HTML. You can stack them horizontally, vertically, and in the z-plane.',
+    image: '../images/box-model.png',
+  },
 }
 
 export default answers

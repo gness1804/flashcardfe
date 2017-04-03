@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, Button } from 'react-native';
+import styles from '../styles/CSS-styles';
 
 class CSS extends Component {
   static navigationOptions = {
@@ -7,9 +8,17 @@ class CSS extends Component {
   }
 
   render() {
+    const { navigate } = this.props.navigation
     return (
       <View>
-        <Text>I am the CSS Component.</Text>
+        <View style={styles.button}>
+          <Button
+            title="Basic Stuff"
+            onPress={() => {
+              navigate('BasicStuff')
+            }}
+          />
+        </View>
       </View>
     );
   }

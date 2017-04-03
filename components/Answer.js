@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ScrollView, Text, Image, Linking } from 'react-native';
+import { ScrollView, Text, Linking } from 'react-native';
 import styles from '../styles/Answer-styles';
 
 class Answer extends Component {
@@ -25,7 +25,7 @@ class Answer extends Component {
   }
 
   render() {
-    const { main, firstPoint, secondPoint, thirdPoint, fourthPoint, image, firstLinkName, firstLinkURL, secondLinkName, secondLinkURL } = this.state
+    const { main, firstPoint, secondPoint, thirdPoint, fourthPoint, firstLinkName, firstLinkURL, secondLinkName, secondLinkURL } = this.state
     return (
       <ScrollView style={styles.container}>
         <Text style={styles.main}>{main}</Text>
