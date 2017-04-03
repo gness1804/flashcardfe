@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Text, ScrollView, TouchableOpacity, Image } from 'react-native';
 import answers from '../helpers/answers';
 import styles from '../styles/Question-styles';
+import homeButtonStyles from '../styles/HomeButton-Styles';
 
 class AdvancedStuff extends Component {
   static navigationOptions = {
@@ -101,7 +102,7 @@ class AdvancedStuff extends Component {
         >
           <Image
             source={require('../images/home.png')}
-            style={styles.homeButton}
+            style={homeButtonStyles.homeButton}
           />
         </TouchableOpacity>
       </ScrollView>

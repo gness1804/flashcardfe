@@ -7,6 +7,7 @@ import {
   Text,
   } from 'react-native';
 import styles from '../styles/Links-styles';
+import homeButtonStyles from '../styles/HomeButton-Styles';
 
 class Links extends Component {
   static navigationOptions = {
@@ -113,7 +114,7 @@ class Links extends Component {
         >
           <Image
             source={require('../images/home.png')}
-            style={styles.homeButton}
+            style={homeButtonStyles.homeButton}
           />
         </TouchableOpacity>
       </ScrollView>
