@@ -7,7 +7,7 @@ class Accessibility extends Component {
   }
 
   goToQuestion = () => {
-    
+    this.props.navigation.navigate('Answer')
   }
 
   render() {
