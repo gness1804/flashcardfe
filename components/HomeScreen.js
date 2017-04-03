@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, Button } from 'react-native';
+import styles from '../styles/HomeScreen-styles';
 
 class HomeScreen extends Component {
   static navigationOptions = {
@@ -10,24 +11,30 @@ class HomeScreen extends Component {
     const { navigate } = this.props.navigation
     return (
       <View>
-        <Button
-          title="HTML"
-          onPress={() => {
-            navigate('HTML')
-          }}
-        />
-        <Button
-          title="CSS"
-          onPress={() => {
-            navigate('CSS')
-          }}
-        />
-        <Button
-          title="JS"
-          onPress={() => {
-            navigate('JS')
-          }}
-        />
+        <View style={styles.button}>
+          <Button
+            title="HTML"
+            onPress={() => {
+              navigate('HTML')
+            }}
+          />
+        </View>
+        <View style={styles.button}>
+          <Button
+            title="CSS"
+            onPress={() => {
+              navigate('CSS')
+            }}
+          />
+        </View>
+        <View style={styles.button}>
+          <Button
+            title="JS"
+            onPress={() => {
+              navigate('JS')
+            }}
+          />
+        </View>
       </View>
     );
   }

@@ -12,10 +12,10 @@ class HTML extends Component {
       <View>
         <Text>I am the HTML Component.</Text>
         <Button
-            title="Accessibility"
-            onPress={() => {
-              navigate('Accessibility')
-            }}
+          title="Accessibility"
+          onPress={() => {
+            navigate('Accessibility')
+          }}
         />
       </View>
     );
