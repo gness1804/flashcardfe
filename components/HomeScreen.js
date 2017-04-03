@@ -29,7 +29,7 @@ class HomeScreen extends Component {
         </View>
         <View style={styles.button}>
           <Button
-            title="JS"
+            title="JavaScript"
             onPress={() => {
               navigate('JS')
             }}

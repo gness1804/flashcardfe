@@ -66,8 +66,34 @@ const answers = {
       display: block;
       height: 0;
       clear: both;
-}
+    }
     `,
+  },
+  preProcessor: {
+    main: 'Pre-processors allow the dev to do a lot of neat things, but they came at the cost of configuration and maintance issues.',
+    firstPoint: 'pros: ability to nest, define variables and mixins, use of mathematical operations, ability to join multiple files into one file',
+    secondPoint: 'cons: difficulty tracking file size, maintenance and updating, difficulties debugging',
+  },
+  pseudoClass: {
+    main: 'CSS pseudo classes are similar to classes, but not explicitly defined in the markup.',
+    firstPoint: 'They are used for addition effects on a selected HTML element, such as link colors, hover actions, etc.',
+    secondPoint: 'Syntax: selector:pseudo-class. (a:link, a:visited)',
+  },
+  pseudoElement: {
+    main: 'Pseudo elements are used to add special effects to some selectors, such as making the first letter of a word bold and larger than the other letters.',
+    firstPoint: 'They are made by using a double colon (::) followed by the name of the pseudo element.',
+    secondPoint: 'They can only be applied to block level elements.',
+    thirdPoint: 'Examples: (::first_line, ::first_letter, ::before, ::after)',
+  },
+  newFeatures: {
+    main: 'Web fonts, rounded corners, border images, box shadows, transform property, multi-column layout.',
+  },
+  shorthand: {
+    main: 'They are used to improve page load times, reduce file size, and make CSS easier to write and read by humans.',
+    secondPoint: `They are accomplished by listing the property values on a single line:
+      body {
+          background: #00ff00 url("smiley.gif") no-repeat fixed center;
+      }`,
   },
 }
 
