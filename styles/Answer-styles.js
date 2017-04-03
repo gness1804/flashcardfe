@@ -3,6 +3,11 @@ const styles = {
     paddingLeft: 10,
     paddingRight: 10,
   },
+  link: {
+    color: 'rgb(53, 78, 212)',
+    marginBottom: 15,
+    textAlign: 'center',
+  },
   main: {
     fontSize: 17,
     fontWeight: '600',

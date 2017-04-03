@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, Image, Linking } from 'react-native';
+import { ScrollView, Text, Image, Linking } from 'react-native';
 import styles from '../styles/Answer-styles';
 
 class Answer extends Component {
@@ -27,7 +27,7 @@ class Answer extends Component {
   render() {
     const { main, firstPoint, secondPoint, thirdPoint, fourthPoint, image, firstLinkName, firstLinkURL, secondLinkName, secondLinkURL } = this.state
     return (
-      <View style={styles.container}>
+      <ScrollView style={styles.container}>
         <Text style={styles.main}>{main}</Text>
         <Text style={styles.ordinaryText}>{firstPoint}</Text>
         <Text style={styles.ordinaryText}>{secondPoint}</Text>
@@ -35,15 +35,17 @@ class Answer extends Component {
         <Text style={styles.ordinaryText}>{fourthPoint}</Text>
         <Text
           onPress={() => { Linking.openURL(`${firstLinkURL}`) }}
+          style={styles.link}
         >
           {firstLinkName}
         </Text>
         <Text
           onPress={() => { Linking.openURL(`${secondLinkURL}`) }}
+          style={styles.link}
         >
           {secondLinkName}
         </Text>
-      </View>
+      </ScrollView>
     );
   }
 

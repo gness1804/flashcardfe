@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Text, View, TouchableOpacity } from 'react-native';
 import answers from '../helpers/answers';
+import styles from '../styles/Question-styles';
 
 class Accessibility extends Component {
   static navigationOptions = {
@@ -16,7 +17,7 @@ class Accessibility extends Component {
             navigate('Answer', { question: answers.aria })
           }}
         >
-          <Text>What is ARIA? How does it aid in accessibility?</Text>
+          <Text style={styles.text}>What is ARIA? How does it aid in accessibility?</Text>
         </TouchableOpacity>
       </View>
     );
