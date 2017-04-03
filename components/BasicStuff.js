@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, TouchableOpacity, Image } from 'react-native';
+import { Text, ScrollView, TouchableOpacity, Image } from 'react-native';
 import answers from '../helpers/answers';
 import styles from '../styles/Question-styles';
 
@@ -11,7 +11,7 @@ class BasicStuff extends Component {
   render() {
     const { navigate } = this.props.navigation;
     return (
-      <View style={styles.container}>
+      <ScrollView style={styles.container}>
         <TouchableOpacity
           onPress={() => {
             navigate('Answer', { question: answers.boxModel })
@@ -81,7 +81,7 @@ class BasicStuff extends Component {
             style={styles.homeButton}
           />
         </TouchableOpacity>
-      </View>
+      </ScrollView>
     );
   }
 
