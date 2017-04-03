@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, Image, Linking } from 'react-native';
-// import styles from '../styles/HTML-styles';
+import styles from '../styles/Answer-styles';
 
 class Answer extends Component {
   static navigationOptions = {
@@ -27,12 +27,12 @@ class Answer extends Component {
   render() {
     const { main, firstPoint, secondPoint, thirdPoint, fourthPoint, image, firstLinkName, firstLinkURL, secondLinkName, secondLinkURL } = this.state
     return (
-      <View>
-        <Text>{main}</Text>
-        <Text>{firstPoint}</Text>
-        <Text>{secondPoint}</Text>
-        <Text>{thirdPoint}</Text>
-        <Text>{fourthPoint}</Text>
+      <View style={styles.container}>
+        <Text style={styles.main}>{main}</Text>
+        <Text style={styles.ordinaryText}>{firstPoint}</Text>
+        <Text style={styles.ordinaryText}>{secondPoint}</Text>
+        <Text style={styles.ordinaryText}>{thirdPoint}</Text>
+        <Text style={styles.ordinaryText}>{fourthPoint}</Text>
         <Text
           onPress={() => { Linking.openURL(`${firstLinkURL}`) }}
         >

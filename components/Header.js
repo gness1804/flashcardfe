@@ -7,7 +7,7 @@ const Header = () => {
     <View style={styles.container}>
       <Text style={styles.headline}>Front End Interview Prep</Text>
       <Text style={styles.attributionText}>
-        Questions courtesy of: &nbsp;
+        Info courtesy of: &nbsp;
         <Text
           onPress={() => { Linking.openURL('https://github.com/lrknaff/frontend-interview-prep') }}
           style={styles.link}
