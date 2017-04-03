@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ScrollView, Text, Linking } from 'react-native';
+import { ScrollView, Text, Linking, TouchableOpacity, Image } from 'react-native';
 import styles from '../styles/Answer-styles';
 
 class Answer extends Component {
@@ -25,6 +25,7 @@ class Answer extends Component {
   }
 
   render() {
+    const { navigate } = this.props.navigation
     const { main,
             firstPoint,
             secondPoint,
@@ -54,6 +55,16 @@ class Answer extends Component {
         >
           {secondLinkName}
         </Text>
+        <TouchableOpacity
+          onPress={() => {
+            navigate('Home')
+          }}
+        >
+          <Image
+            source={require('../images/home.png')}
+            style={styles.homeButton}
+          />
+        </TouchableOpacity>
       </ScrollView>
     );
   }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Button } from 'react-native';
+import { View, Button, TouchableOpacity, Image } from 'react-native';
 import styles from '../styles/HTML-styles';
 
 class HTML extends Component {
@@ -27,14 +27,16 @@ class HTML extends Component {
             }}
           />
         </View>
-        <View style={styles.button}>
-          <Button
-            title="Go Home"
-            onPress={() => {
-              navigate('Home')
-            }}
+        <TouchableOpacity
+          onPress={() => {
+            navigate('Home')
+          }}
+        >
+          <Image
+            source={require('../images/home.png')}
+            style={styles.homeButton}
           />
-        </View>
+        </TouchableOpacity>
       </View>
     );
   }
