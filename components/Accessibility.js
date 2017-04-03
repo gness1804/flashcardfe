@@ -1,15 +1,23 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, TouchableOpacity } from 'react-native';
 
 class Accessibility extends Component {
   static navigationOptions = {
     title: 'Accessibility Questions',
   }
 
+  goToQuestion = () => {
+    
+  }
+
   render() {
     return (
       <View>
-        <Text>I am the Accessibility Component.</Text>
+        <TouchableOpacity
+          onPress={this.goToQuestion}
+        >
+          <Text>What is ARIA? How does it aid in accessibility?</Text>
+        </TouchableOpacity>
       </View>
     );
   }

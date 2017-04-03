@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, Button } from 'react-native';
+import { View, Button } from 'react-native';
 import styles from '../styles/HTML-styles';
 
 class HTML extends Component {
@@ -11,7 +11,6 @@ class HTML extends Component {
     const { navigate } = this.props.navigation
     return (
       <View>
-        <Text>I am the HTML Component.</Text>
         <View style={styles.button}>
           <Button
             title="Accessibility"
