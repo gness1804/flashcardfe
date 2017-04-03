@@ -8,6 +8,7 @@ import Answer from './Answer';
 import OtherHTML from './OtherHTML';
 import BasicStuff from './BasicStuff';
 import AdvancedStuff from './AdvancedStuff';
+import Links from './Links';
 
 const Navigation = StackNavigator({
   Home: { screen: HomeScreen },
@@ -19,6 +20,7 @@ const Navigation = StackNavigator({
   OtherHTML: { screen: OtherHTML },
   BasicStuff: { screen: BasicStuff },
   AdvancedStuff: { screen: AdvancedStuff },
+  Links: { screen: Links },
 });
 
 export default Navigation;

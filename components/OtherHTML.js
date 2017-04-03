@@ -25,7 +25,7 @@ class OtherHTML extends Component {
           }}
         >
           <Image
-            source={require('../images/home.png')}
+            source={require('../images/home.png')}w
             style={styles.homeButton}
           />
         </TouchableOpacity>

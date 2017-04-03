@@ -35,6 +35,14 @@ class HomeScreen extends Component {
             }}
           />
         </View>
+        <View style={styles.button}>
+          <Button
+            title="Useful Links"
+            onPress={() => {
+              navigate('Links')
+            }}
+          />
+        </View>
       </View>
     );
   }
