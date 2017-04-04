@@ -142,6 +142,19 @@ const answers = {
     firstPoint: 'Common use cases for callbacks include event listeners; asynchronous tasks; and setTimeout/setInterval methods.',
     secondPoint: 'If you stop and think about it, you are probably often using callbacks without even realizing it!',
   },
+  delegation: {
+    main: 'In JS, an event received by an element (like a "click" event listener) does not stop with that one element. It moves to other elements like the parent, and other ancestors of the element. Event delegation allows us to attach a single event listener to a parent element, that will fire for all descendants matching a selector, whether those descendants exist now or are added in the future.',
+    firstPoint: 'This uses event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. For instance, when you click on an li (like a button), the click event registers on the entire ul (the list of buttons.)',
+    secondPoint: 'Event delegation is often used for dynamically created elements (like buttons created in a div that appears on the page only when the user enters in some data). Because the parent (or grandparent) element originally existed, event propagation can be used to "bubble" the click event down to the dynamically created child.',
+    thirdPoint: `
+    Example of using event delegation (The second, selector parameter tells the handler to listen for the specified event, and when it hears it, checks to see if the triggering element for that event matches the second parameter):
+      // Attach a delegated event handler
+      $( "#list" ).on( "click", "a", function( event ) {
+      event.preventDefault();
+      console.log( $( this ).text() );
+      });
+    `,
+  },
 }
 
 export default answers

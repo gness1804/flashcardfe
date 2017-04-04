@@ -32,7 +32,7 @@ class JS extends Component {
           <Button
             title="Advanced"
             onPress={() => {
-              navigate('')
+              navigate('AdvancedJS')
             }}
           />
         </View>

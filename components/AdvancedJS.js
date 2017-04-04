@@ -4,9 +4,9 @@ import answers from '../helpers/answers';
 import styles from '../styles/Question-styles';
 import homeButtonStyles from '../styles/HomeButton-Styles';
 
-class IntermediateJS extends Component {
+class AdvancedJS extends Component {
   static navigationOptions = {
-    title: 'Intermediate JavaScript',
+    title: 'Advanced JavaScript',
   }
 
   render() {
@@ -15,35 +15,13 @@ class IntermediateJS extends Component {
       <ScrollView style={styles.container}>
         <TouchableOpacity
           onPress={() => {
-            navigate('Answer', { question: answers.inheritance })
+            navigate('Answer', { question: answers.delegation })
           }}
         >
           <Text
             style={styles.text}
           >
-          What is the difference between Prototypal and Class inheritance?
-          </Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => {
-            navigate('Answer', { question: answers.objects })
-          }}
-        >
-          <Text
-            style={styles.text}
-          >
-          Why are Functions and Arrays considered Objects in JS?
-          </Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => {
-            navigate('Answer', { question: answers.callback })
-          }}
-        >
-          <Text
-            style={styles.text}
-          >
-          What is a callback?
+          What is event Bubbling/Delegation? Can you give an example?
           </Text>
         </TouchableOpacity>
 
@@ -63,4 +41,4 @@ class IntermediateJS extends Component {
 
 }
 
-export default IntermediateJS;
+export default AdvancedJS;
