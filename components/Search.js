@@ -26,18 +26,18 @@ class Search extends Component {
     return arr
   }
 
-  filterSearchResults = (ans) => { // eslint-disable-line
-
-  }
-
   runSearch = () => {
     const promise = new Promise((resolve) => {
       resolve(this.getAnswersArray())
     })
 
     promise
-    .then((result) => { this.setState({ answersArr: result }) })
-    .then(() => { this.filterSearchResults(this.state.answersArr) })
+    .then((result) => {
+      return result.filter((a) => {
+        return a.main.includes(this.state.search.toLowerCase())
+      })
+    })
+    .then((filtered) => { }) // eslint-disable-line
     .catch((error) => { throw new Error(error) })
   }
 
