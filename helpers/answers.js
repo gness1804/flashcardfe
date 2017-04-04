@@ -251,6 +251,16 @@ const answers = {
     firstLinkName: 'MDN Docs on Hoisting',
     firstLinkURL: 'https://developer.mozilla.org/en-US/docs/Glossary/Hoisting',
   },
+  iife: {
+    main: 'IIFEs are functions that are called immediately once they are created. By contrast, a regular function must be called separately, via a function call like `getData()`.',
+    firstPoint: `
+      An example of an IIFE:
+      (function getData(){
+        console.log('I will get the data as soon as the JS engine reads me!')
+      })():
+    `,
+    secondPoint: 'IIFEs are often used to protect data from the global scope. They can also be useful if one wants to execute code when the page loads and doesn\'t want to bother with something like a `load` event listener or adding an additional line of code to call a previously created function.',
+  },
 }
 
 export default answers

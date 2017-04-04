@@ -90,6 +90,17 @@ class IntermediateJS extends Component {
           What is console shimming?
           </Text>
         </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            navigate('Answer', { question: answers.iife })
+          }}
+        >
+          <Text
+            style={styles.text}
+          >
+          What are Immediately Invoked Function Expressions (IIFEs)?
+          </Text>
+        </TouchableOpacity>
 
         <TouchableOpacity
           onPress={() => {
