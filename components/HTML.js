@@ -12,7 +12,7 @@ class HTML extends Component {
     const { navigate } = this.props.navigation
     return (
       <View>
-        <View style={styles.button}>
+        <View style={styles.topButton}>
           <Button
             title="Accessibility"
             onPress={() => {

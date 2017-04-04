@@ -4,11 +4,11 @@ const styles = {
     paddingLeft: 30,
     paddingRight: 30,
   },
-  homeButton: {
-    alignSelf: 'center',
-    height: 100,
-    marginTop: 400,
-    width: 100,
+  topButton: {
+    marginBottom: 30,
+    marginTop: 50,
+    paddingLeft: 30,
+    paddingRight: 30,
   },
 }
 

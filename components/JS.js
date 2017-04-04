@@ -12,7 +12,7 @@ class JS extends Component {
     const { navigate } = this.props.navigation
     return (
       <View>
-        <View style={styles.button}>
+        <View style={styles.topButton}>
           <Button
             title="Foundations"
             onPress={() => {
