@@ -46,6 +46,17 @@ class IntermediateJS extends Component {
           What is a callback?
           </Text>
         </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            navigate('Answer', { question: answers.closure })
+          }}
+        >
+          <Text
+            style={styles.text}
+          >
+        What is a closure?
+          </Text>
+        </TouchableOpacity>
 
         <TouchableOpacity
           onPress={() => {

@@ -9,3 +9,4 @@ To submit questions, feel free to make a pull request!
 Sources that I found useful:
 
 [Tutorial on React Native Navigation](https://reactnavigation.org/docs/intro/)
+[Stack Overflow post with syntax on dynamically passing props to Image](https://stackoverflow.com/questions/29322973/whats-the-best-way-to-add-a-full-screen-background-image-in-react-native)

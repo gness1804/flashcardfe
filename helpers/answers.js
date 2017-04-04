@@ -155,6 +155,14 @@ const answers = {
       });
     `,
   },
+  closure: {
+    main: 'A closure is the combination of a function and the lexical environment (or simply "environment") within which that function was declared.',
+    firstPoint: 'An inner function that has access to the outer (enclosing) function\'s variables -- scope chain.',
+    firstLinkName: 'Explanation from JavaScript is Sexy',
+    firstLinkURL: 'http://javascriptissexy.com/understand-javascript-closures-with-ease/',
+    secondLinkName: 'MDN page on closures',
+    secondLinkURL: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures',
+  },
 }
 
 export default answers
