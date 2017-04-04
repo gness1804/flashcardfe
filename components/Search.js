@@ -1,16 +1,35 @@
 import React, { Component } from 'react';
-import { ScrollView, View, Button, TouchableOpacity, Text } from 'react-native';
-// import styles from '../styles/HomeScreen-styles';
+import { View, Text, TextInput, Button } from 'react-native';
+import styles from '../styles/Search-styles';
 
 class Search extends Component {
   static navigationOptions = {
     title: 'Search',
   }
 
+  constructor() {
+    super()
+    this.state = {
+      search: '',
+    }
+  }
+
+  runSearch = () => {
+
+  }
+
   render() {
     return (
       <View>
-        <Text>I am the Search component.</Text>
+        <Text>Search for info:</Text>
+        <TextInput
+          style={styles.box}
+          onChangeText={(text) => { this.setState({ search: text }) }}
+        />
+        <Button
+          title="Run Search!"
+          onPress={this.runSearch}
+        />
       </View>
     );
   }
