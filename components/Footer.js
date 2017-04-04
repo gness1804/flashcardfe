@@ -6,7 +6,7 @@ class Footer extends React.Component {
 
   render() {
     return (
-      <View>
+      <View style={styles.container}>
         <TouchableOpacity
           onPress={() => { Linking.openURL('https://github.com/gness1804/front-end-interview-prep-app') }}
         >

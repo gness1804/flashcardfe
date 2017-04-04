@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Button } from 'react-native';
+import { ScrollView, View, Button } from 'react-native';
 import styles from '../styles/HomeScreen-styles';
 
 class HomeScreen extends Component {
@@ -10,8 +10,8 @@ class HomeScreen extends Component {
   render() {
     const { navigate } = this.props.navigation
     return (
-      <View>
-        <View style={styles.button}>
+      <ScrollView>
+        <View style={styles.topButton}>
           <Button
             title="HTML"
             onPress={() => {
@@ -35,7 +35,7 @@ class HomeScreen extends Component {
             }}
           />
         </View>
-        <View style={styles.button}>
+        <View style={styles.topButton}>
           <Button
             title="Useful Links"
             onPress={() => {
@@ -43,7 +43,15 @@ class HomeScreen extends Component {
             }}
           />
         </View>
-      </View>
+        <View style={styles.button}>
+          <Button
+            title="Questions to Ask an Interviewer"
+            onPress={() => {
+              navigate('Links')
+            }}
+          />
+        </View>
+      </ScrollView>
     );
   }
 
