@@ -57,6 +57,28 @@ class IntermediateJS extends Component {
         What is a closure?
           </Text>
         </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            navigate('Answer', { question: answers.bindCallApply })
+          }}
+        >
+          <Text
+            style={styles.text}
+          >
+          What are Apply, Call and Bind methods? Why are they an essential part of JS?
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            navigate('Answer', { question: answers.dataBinding })
+          }}
+        >
+          <Text
+            style={styles.text}
+          >
+          What is two-way data binding and one-way data flow? How are they different?
+          </Text>
+        </TouchableOpacity>
 
         <TouchableOpacity
           onPress={() => {

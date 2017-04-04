@@ -180,6 +180,18 @@ const answers = {
     secondLinkName: 'Learn ES2015 (guide from Babel)',
     secondLinkURL: 'https://babeljs.io/learn-es2015/',
   },
+  bindCallApply: {
+    main: 'All these methods are used to bind the value of "this" to a function, as well as to pass in optional additional arguments.',
+    firstPoint: 'The *Bind()* method is used primarily to call a function with the *this* value set explicitly.',
+    secondPoint: 'The *Call()* method is very similar to *Bind()*, except that the former calls the function automatically.',
+    thirdPoint: '*Apply* allows us to execute a function with an array of parameters, such that each parameter is passed to the function individually when the function executes. Apply is great for **variadic** functions, which take a varying number of arguments, not a set number like most functions.',
+    firstLinkName: 'JavaScript’s Apply, Call, and Bind Methods are Essential for JavaScript Professionals',
+    firstLinkURL: 'http://javascriptissexy.com/javascript-apply-call-and-bind-methods-are-essential-for-javascript-professionals/',
+  },
+  dataBinding: {
+    main: 'In **two-way data binding**, UI fields are bound to model data dynamically such that when a UI field changes, the model data changes with it, while in **one-way data flow**, the model is the single source of truth. Changes in the UI trigger messages that signal user intent to the model. Only the model has the access to change the app’s state. The effect is that data always flows in a single direction, which makes it easier to understand.',
+    firstPoint: 'Two-way data binding is particularly important in AngularJS.',
+  },
 }
 
 export default answers
