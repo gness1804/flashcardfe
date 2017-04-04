@@ -37,11 +37,11 @@ class AdvancedJS extends Component {
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => {
-            navigate('Answer', { question: answers.es6 })
+            navigate('Answer', { question: answers.cors })
           }}
         >
           <Text
-            style={styles.cors}
+            style={styles.text}
           >
           What does CORS stand for and what issue does it address?
           </Text>

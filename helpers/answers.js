@@ -203,7 +203,7 @@ const answers = {
     secondPoint: 'ML5 introduced a storage object to help users store data in the browser. The storage object has two different types localStorage and sessionStorage and both types share the same methods. Both types of storage involve key/value pairs.',
     thirdPoint: 'To protect the user, the data stored in localStorage and sessionStorage is shared only under the same origin policy - meaning that it is stored in the browser but only accessible to pages with the same domain as that which stored it.',
     fourthPoint: 'What is the difference between localStorage and sessionStorage? **Session Storage**: does not persist outside of the users session - useful for semi-private user information or rapidly changing data. **Local Storage**: persists across tabs and is useful for data that should be stored offline.',
-    firstLinkName: 'Lesson on storage types',
+    firstLinkName: 'Turing Lesson on storage types',
     firstLinkURL: 'https://github.com/turingschool/lesson_plans/blob/3ee469be5fdc94c926a88ca510106848b0339731/ruby_04-apis_and_scalability/client_side_storage.markdown',
   },
   equality: {
@@ -216,6 +216,11 @@ const answers = {
   },
   cors: {
     main: 'CORS stands for Cross-Origin Resource Sharing. It is a mechanism in modern browsers to prevent unauthorized access to web content.',
+    firstPoint: 'CORS adds a header to an HTTP response that looks like: Access-Control-Allow-Origin: http://www.example.com. This prevents domains outside of example.com from accessing this site\'s resources.',
+    firstLinkName: 'MDN Docs on CORS',
+    firstLinkURL: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS',
+    secondLinkName: 'Turing Lesson on CORS',
+    secondLinkURL: 'http://frontend.turing.io/lessons/cors.html',
   },
 }
 
