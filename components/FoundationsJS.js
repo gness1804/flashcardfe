@@ -71,6 +71,18 @@ class FoundationsJS extends Component {
           What is the difference between == and ===?
           </Text>
         </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            navigate('Answer', { question: answers.hog })
+          }}
+        >
+          <Text
+            style={styles.text}
+          >
+          What value is returned from the following statement?
+          "i'm a lasagna hog".split("").reverse().join("");
+          </Text>
+        </TouchableOpacity>
 
         <TouchableOpacity
           onPress={() => {

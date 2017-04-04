@@ -211,6 +211,12 @@ const answers = {
     firstLinkName: 'MDN Docs on Equality Comparison',
     firstLinkURL: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness',
   },
+  hog: {
+    main: 'goh angasal a m\'i',
+  },
+  cors: {
+    main: 'CORS stands for Cross-Origin Resource Sharing. It is a mechanism in modern browsers to prevent unauthorized access to web content.',
+  },
 }
 
 export default answers
