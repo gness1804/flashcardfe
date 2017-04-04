@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ScrollView, TouchableOpacity, Image } from 'react-native';
+import { ScrollView, TouchableOpacity, Image, View, Text } from 'react-native';
 // import styles from '../styles/Search-styles';
 import homeButtonStyles from '../styles/HomeButton-Styles';
 import SearchItem from './SearchItem';
@@ -12,11 +12,20 @@ class SearchResults extends Component {
   render() {
     const { navigate } = this.props.navigation
     const { results } = this.props.navigation.state.params
-    const display = results.map((item) => {
-      return (
-        <SearchItem {...item} key={item.id} />
+    let display
+    if (results.length) {
+      display = results.map((item) => {
+        return (
+          <SearchItem {...item} key={item.id} />
+        )
+      })
+    } else {
+      display = (
+        <View>
+          <Text>Oops, no results to display. Please try again.</Text>
+        </View>
       )
-    })
+    }
 
     return (
       <ScrollView>

@@ -47,11 +47,12 @@ class Search extends Component {
     const { navigate } = this.props.navigation
     return (
       <View>
-        <Text>Search for info:</Text>
-        <TextInput
+        <View style={styles.inputContainer}>
+          <TextInput
           style={styles.box}
           onChangeText={(text) => { this.setState({ search: text }) }}
-        />
+          />
+        </View>
         <View style={styles.button}>
           <Button
             title="Run Search!"

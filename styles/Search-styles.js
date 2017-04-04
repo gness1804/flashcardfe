@@ -10,6 +10,11 @@ const styles = {
     paddingLeft: 30,
     paddingRight: 30,
   },
+  inputContainer: {
+    marginTop: 30,
+    paddingLeft: 30,
+    paddingRight: 30,
+  },
 }
 
 export default styles
