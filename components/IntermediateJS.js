@@ -18,7 +18,11 @@ class IntermediateJS extends Component {
             navigate('Answer', { question: answers.inheritance })
           }}
         >
-          <Text style={styles.text}>What is the difference between Prototypal and Class inheritance?</Text>
+          <Text
+            style={styles.text}
+          >
+          What is the difference between Prototypal and Class inheritance?
+          </Text>
         </TouchableOpacity>
 
         <TouchableOpacity

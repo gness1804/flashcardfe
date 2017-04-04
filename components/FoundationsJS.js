@@ -20,6 +20,13 @@ class FoundationsJS extends Component {
         >
           <Text style={styles.text}>What are the 2 most important paradigms of JS? Why?</Text>
         </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            navigate('Answer', { question: answers.dataTypes })
+          }}
+        >
+          <Text style={styles.text}>What are the six main data types in JS?</Text>
+        </TouchableOpacity>
 
         <TouchableOpacity
           onPress={() => {

@@ -118,6 +118,14 @@ const answers = {
     firstLinkName: 'Read up on the three types of prototypal inheritance: delegation, concatenative, and functional.',
     firstLinkURL: 'https://medium.com/javascript-scene/3-different-kinds-of-prototypal-inheritance-es6-edition-32d777fa16c9',
   },
+  dataTypes: {
+    main: 'String, number, object, null, undefined, boolean.',
+    firstPoint: 'JS does not distinguish between whole numbers (integers) and decimals or fractions, unlike many other languages.',
+    secondPoint: 'Arrays, functions, and objects are considered objects.',
+    thirdPoint: 'undefined versus null: undefined is when a variable is referenced that does not have a value; null is an assigned value, or the intentional assignment of a var to a value of nothing.',
+    fourthPoint: 'JS also does not distinguish between a string and a single character, unlike languages such as Java.',
+    fifthPoint: 'Boolean can have two values: true or false.',
+  },
 }
 
 export default answers
