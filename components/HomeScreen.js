@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ScrollView, View, Button } from 'react-native';
+import { ScrollView, View, Button, TouchableOpacity, Text } from 'react-native';
 import styles from '../styles/HomeScreen-styles';
 
 class HomeScreen extends Component {
@@ -51,6 +51,13 @@ class HomeScreen extends Component {
             }}
           />
         </View>
+        <TouchableOpacity
+          onPress={() => {
+            navigate('Search')
+          }}
+        >
+          <Text>Search</Text>
+        </TouchableOpacity>
       </ScrollView>
     );
   }
