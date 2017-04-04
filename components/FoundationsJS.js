@@ -27,6 +27,17 @@ class FoundationsJS extends Component {
         >
           <Text style={styles.text}>What are the six main data types in JS?</Text>
         </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            navigate('Answer', { question: answers.varLetConst })
+          }}
+        >
+          <Text
+            style={styles.text}
+          >
+          Describe the difference between var, let and const
+          </Text>
+        </TouchableOpacity>
 
         <TouchableOpacity
           onPress={() => {

@@ -24,6 +24,28 @@ class IntermediateJS extends Component {
           What is the difference between Prototypal and Class inheritance?
           </Text>
         </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            navigate('Answer', { question: answers.objects })
+          }}
+        >
+          <Text
+            style={styles.text}
+          >
+          Why are Functions and Arrays considered Objects in JS?
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            navigate('Answer', { question: answers.callback })
+          }}
+        >
+          <Text
+            style={styles.text}
+          >
+          What is a callback?
+          </Text>
+        </TouchableOpacity>
 
         <TouchableOpacity
           onPress={() => {

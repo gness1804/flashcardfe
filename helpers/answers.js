@@ -125,6 +125,22 @@ const answers = {
     thirdPoint: 'undefined versus null: undefined is when a variable is referenced that does not have a value; null is an assigned value, or the intentional assignment of a var to a value of nothing.',
     fourthPoint: 'JS also does not distinguish between a string and a single character, unlike languages such as Java.',
     fifthPoint: 'Boolean can have two values: true or false.',
+    firstLinkName: 'MDN docs on JS data types.',
+    firstLinkURL: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures',
+  },
+  objects: {
+    main: 'JS was written to be an object oriented language. All objects in JS, broadly defined, inherit from Object.prototype, while arrays inherit from Array.prototype and functions from Function.prototype, which in turn inherit from Object.Prototype. This structure has shaped the language and its emphasis on prototypal inheritance as a core data architecture.',
+  },
+  varLetConst: {
+    main: 'In a nutshell: let and const are new ES6 replacements for var; the former two are block scoped while the latter is function scoped.',
+    firstPoint: 'const: immutable; cannot be reassigned. Block scoped',
+    secondPoint: 'let: same as const except that it can be reassigned. Use when you know you will reassign a variable, such as within a loop.',
+    thirdPoint: 'var: the old standard variable notation. It is function scoped and can be reassigned.',
+  },
+  callback: {
+    main: 'A callback is a function that is passed to another function as a parameter. It is passed as an argument, not as an executed function.',
+    firstPoint: 'Common use cases for callbacks include event listeners; asynchronous tasks; and setTimeout/setInterval methods.',
+    secondPoint: 'If you stop and think about it, you are probably often using callbacks without even realizing it!',
   },
 }
 

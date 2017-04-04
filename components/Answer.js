@@ -62,6 +62,7 @@ class Answer extends Component {
         >
           {secondLinkName}
         </Text>
+
         <TouchableOpacity
           onPress={() => {
             navigate('Home')
