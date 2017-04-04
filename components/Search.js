@@ -37,7 +37,9 @@ class Search extends Component {
         return a.main.includes(this.state.search.toLowerCase())
       })
     })
-    .then((filtered) => { }) // eslint-disable-line
+    .then((filtered) => {
+      this.props.navigation.navigate('SearchResults', { results: filtered })
+    })
     .catch((error) => { throw new Error(error) })
   }
 

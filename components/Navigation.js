@@ -14,6 +14,7 @@ import IntermediateJS from './IntermediateJS';
 import AdvancedJS from './AdvancedJS';
 import InterviewQuestions from './InterviewQuestions';
 import Search from './Search';
+import SearchResults from './SearchResults';
 
 const Navigation = StackNavigator({
   Home: { screen: HomeScreen },
@@ -31,6 +32,7 @@ const Navigation = StackNavigator({
   AdvancedJS: { screen: AdvancedJS },
   InterviewQuestions: { screen: InterviewQuestions },
   Search: { screen: Search },
+  SearchResults: { screen: SearchResults },
 });
 
 export default Navigation;
