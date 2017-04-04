@@ -47,7 +47,7 @@ class HomeScreen extends Component {
           <Button
             title="Questions to Ask an Interviewer"
             onPress={() => {
-              navigate('Links')
+              navigate('InterviewQuestions')
             }}
           />
         </View>
