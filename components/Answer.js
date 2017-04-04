@@ -17,6 +17,8 @@ class Answer extends Component {
       secondPoint: this.props.navigation.state.params.question.secondPoint,
       thirdPoint: this.props.navigation.state.params.question.thirdPoint,
       fourthPoint: this.props.navigation.state.params.question.fourthPoint,
+      fifthPoint: this.props.navigation.state.params.question.fifthPoint,
+      sixthPoint: this.props.navigation.state.params.question.sixthPoint,
       image: this.props.navigation.state.params.question.image,
       firstLinkName: this.props.navigation.state.params.question.firstLinkName,
       firstLinkURL: this.props.navigation.state.params.question.firstLinkURL,
@@ -32,6 +34,8 @@ class Answer extends Component {
             secondPoint,
             thirdPoint,
             fourthPoint,
+            fifthPoint,
+            sixthPoint,
             firstLinkName,
             firstLinkURL,
             secondLinkName,
@@ -44,6 +48,8 @@ class Answer extends Component {
         <Text style={styles.ordinaryText}>{secondPoint}</Text>
         <Text style={styles.ordinaryText}>{thirdPoint}</Text>
         <Text style={styles.ordinaryText}>{fourthPoint}</Text>
+        <Text style={styles.ordinaryText}>{fifthPoint}</Text>
+        <Text style={styles.ordinaryText}>{sixthPoint}</Text>
         <Text
           onPress={() => { Linking.openURL(`${firstLinkURL}`) }}
           style={styles.link}

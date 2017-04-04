@@ -22,7 +22,7 @@ const styles = {
     textAlign: 'center',
   },
   ordinaryText: {
-    marginBottom: 5,
+    marginBottom: 10,
     textAlign: 'center',
   },
 }

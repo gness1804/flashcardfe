@@ -102,6 +102,15 @@ const answers = {
     thirdPoint: 'clip: rect(1px, 1px, 1px, 1px) Clips content that will not fit in a 1px area. Available to screen readers.',
     fourthPoint: 'position:absolute; left:-10000px; overflow:hidden; : Absolutely position element off screen. Available to screen readers.',
   },
+  paradigms: {
+    main: 'OOP (Object Oriented Programming) and Functional Programming',
+    firstPoint: 'OOP overview: Supports prototypal inheritance; Objects without classes in the classical sense',
+    secondPoint: 'Functional Programming overview: Avoids shared state & mutable data; uses pure functions',
+    thirdPoint: 'OOP pros: Easy to interpret and read; more flexible than classical paradigms.',
+    fourthPoint: 'OOP cons: Objects and behaviors are typically tied together on the same entity, which may be accessed randomly by any number of functions. ==> race conditions and competition for resources.',
+    fifthPoint: 'Functional Programming pros: can refactor with very little code change; More simplified and easier to recompose and reuse.',
+    sixthPoint: 'Functional Programming cons: Over exploitation can reduce readability through abstraction; steep learning curve.',
+  },
 }
 
 export default answers

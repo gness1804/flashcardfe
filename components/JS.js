@@ -16,7 +16,7 @@ class JS extends Component {
           <Button
             title="Foundations"
             onPress={() => {
-              navigate('')
+              navigate('FoundationsJS')
             }}
           />
         </View>
