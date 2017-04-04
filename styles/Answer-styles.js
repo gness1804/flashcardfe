@@ -9,6 +9,9 @@ const styles = {
     marginTop: 400,
     width: 100,
   },
+  image: {
+    alignSelf: 'center',
+  },
   link: {
     color: 'rgb(53, 78, 212)',
     marginBottom: 15,
