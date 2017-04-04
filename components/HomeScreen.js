@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ScrollView, View, Button, TouchableOpacity, Text } from 'react-native';
+import { ScrollView, View, Button, TouchableOpacity, Image } from 'react-native';
 import styles from '../styles/HomeScreen-styles';
 
 class HomeScreen extends Component {
@@ -35,6 +35,16 @@ class HomeScreen extends Component {
             }}
           />
         </View>
+        <TouchableOpacity
+          onPress={() => {
+            navigate('Search')
+          }}
+        >
+          <Image
+            source={require('../images/search.png')}
+            style={styles.searchIcon}
+          />
+        </TouchableOpacity>
         <View style={styles.topButton}>
           <Button
             title="Useful Links"
@@ -51,13 +61,6 @@ class HomeScreen extends Component {
             }}
           />
         </View>
-        <TouchableOpacity
-          onPress={() => {
-            navigate('Search')
-          }}
-        >
-          <Text>Search</Text>
-        </TouchableOpacity>
       </ScrollView>
     );
   }
