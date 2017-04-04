@@ -49,6 +49,17 @@ class FoundationsJS extends Component {
           Name and describe some new features of ES6.
           </Text>
         </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            navigate('Answer', { question: answers.storage })
+          }}
+        >
+          <Text
+            style={styles.text}
+          >
+          Describe the difference between a cookie, sessionStorage and localStorage.
+          </Text>
+        </TouchableOpacity>
 
         <TouchableOpacity
           onPress={() => {

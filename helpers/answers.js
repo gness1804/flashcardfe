@@ -197,6 +197,15 @@ const answers = {
     firstLinkName: 'More details here',
     firstLinkURL: 'https://github.com/kayahr/console-shim',
   },
+  storage: {
+    main: 'Cookies are a mechanism for storing data involving the server, while localStorage and sessionStorage are browser-based.',
+    firstPoint: 'Before HTML5 was introduced, the primary mechanism for storing information in the browser was cookies. Cookies are Not able to hold a lot of data (a limit of 4095 bytes); sent to the server every time you request a page from that domain; and not considered secure. Cookies are vulnerable to cross-site request forgery (CSRF).',
+    secondPoint: 'ML5 introduced a storage object to help users store data in the browser. The storage object has two different types localStorage and sessionStorage and both types share the same methods. Both types of storage involve key/value pairs.',
+    thirdPoint: 'To protect the user, the data stored in localStorage and sessionStorage is shared only under the same origin policy - meaning that it is stored in the browser but only accessible to pages with the same domain as that which stored it.',
+    fourthPoint: 'What is the difference between localStorage and sessionStorage? **Session Storage**: does not persist outside of the users session - useful for semi-private user information or rapidly changing data. **Local Storage**: persists across tabs and is useful for data that should be stored offline.',
+    firstLinkName: 'Lesson on storage types',
+    firstLinkURL: 'https://github.com/turingschool/lesson_plans/blob/3ee469be5fdc94c926a88ca510106848b0339731/ruby_04-apis_and_scalability/client_side_storage.markdown',
+  },
 }
 
 export default answers
