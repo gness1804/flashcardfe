@@ -111,6 +111,13 @@ const answers = {
     fifthPoint: 'Functional Programming pros: can refactor with very little code change; More simplified and easier to recompose and reuse.',
     sixthPoint: 'Functional Programming cons: Over exploitation can reduce readability through abstraction; steep learning curve.',
   },
+  inheritance: {
+    main: 'In a nutshell: class inheritance stems from the classical programming languages (i.e. Java), while prototypal inheritance is tied to objects and is much more flexible.',
+    firstPoint: 'Class inheritance overview: instances inherit from classes (like a blueprint), and create sub-class relationships: hierarchical class taxonomies. Creates tight coupling/hierarchies.',
+    secondPoint: 'Prototypal inheritance overview: Instances inherit directly from other objects, not strict classes; May be composed from many different objects, allowing for easy selective inheritance.',
+    firstLinkName: 'Read up on the three types of prototypal inheritance: delegation, concatenative, and functional.',
+    firstLinkURL: 'https://medium.com/javascript-scene/3-different-kinds-of-prototypal-inheritance-es6-edition-32d777fa16c9',
+  },
 }
 
 export default answers

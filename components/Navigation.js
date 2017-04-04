@@ -10,6 +10,7 @@ import BasicStuff from './BasicStuff';
 import AdvancedStuff from './AdvancedStuff';
 import Links from './Links';
 import FoundationsJS from './FoundationsJS';
+import IntermediateJS from './IntermediateJS';
 
 const Navigation = StackNavigator({
   Home: { screen: HomeScreen },
@@ -23,6 +24,7 @@ const Navigation = StackNavigator({
   AdvancedStuff: { screen: AdvancedStuff },
   Links: { screen: Links },
   FoundationsJS: { screen: FoundationsJS },
+  IntermediateJS: { screen: IntermediateJS },
 });
 
 export default Navigation;

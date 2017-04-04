@@ -24,7 +24,7 @@ class JS extends Component {
           <Button
             title="Intermediate"
             onPress={() => {
-              navigate('')
+              navigate('IntermediateJS')
             }}
           />
         </View>
