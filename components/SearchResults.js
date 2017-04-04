@@ -20,12 +20,12 @@ class SearchResults extends Component {
 
     return (
       <ScrollView>
+        {display}
         <TouchableOpacity
           onPress={() => {
             navigate('Home')
           }}
         >
-          {display}
           <Image
             source={require('../images/home.png')}
             style={homeButtonStyles.homeButton}
