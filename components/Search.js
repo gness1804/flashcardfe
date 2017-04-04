@@ -13,7 +13,6 @@ class Search extends Component {
     super()
     this.state = {
       search: '',
-      answersArr: [],
     }
   }
 
@@ -53,11 +52,12 @@ class Search extends Component {
           style={styles.box}
           onChangeText={(text) => { this.setState({ search: text }) }}
         />
-        <Button
-          style={styles.button}
-          title="Run Search!"
-          onPress={this.runSearch}
-        />
+        <View style={styles.button}>
+          <Button
+            title="Run Search!"
+            onPress={this.runSearch}
+          />
+        </View>
         <TouchableOpacity
           onPress={() => {
             navigate('Home')

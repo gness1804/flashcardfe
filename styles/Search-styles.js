@@ -6,6 +6,7 @@ const styles = {
   },
   button: {
     marginBottom: 30,
+    marginTop: 30,
     paddingLeft: 30,
     paddingRight: 30,
   },
