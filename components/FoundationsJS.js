@@ -35,7 +35,7 @@ class FoundationsJS extends Component {
           <Text
             style={styles.text}
           >
-          Describe the difference between var, let and const
+          Describe the difference between var, let and const.
           </Text>
         </TouchableOpacity>
         <TouchableOpacity

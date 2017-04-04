@@ -34,7 +34,7 @@ class Search extends Component {
     promise
     .then((result) => {
       return result.filter((a) => {
-        return a.question.includes(this.state.search.toLowerCase())
+        return a.question.toLowerCase().includes(this.state.search.toLowerCase())
       })
     })
     .then((filtered) => {

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { ScrollView, View, Text, TouchableOpacity, Image } from 'react-native';
+import { ScrollView, TouchableOpacity, Image } from 'react-native';
 // import styles from '../styles/Search-styles';
 import homeButtonStyles from '../styles/HomeButton-Styles';
+import SearchItem from './SearchItem';
 
 class SearchResults extends Component {
   static navigationOptions = {
@@ -13,15 +14,12 @@ class SearchResults extends Component {
     const { results } = this.props.navigation.state.params
     const display = results.map((item) => {
       return (
-        <View>
-          <Text>{item.question}</Text>
-        </View>
+        <SearchItem {...item} key={item.id} />
       )
     })
 
     return (
       <ScrollView>
-        <Text>I am the search result page.</Text>
         <TouchableOpacity
           onPress={() => {
             navigate('Home')
