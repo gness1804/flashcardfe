@@ -79,6 +79,17 @@ class IntermediateJS extends Component {
           What is two-way data binding and one-way data flow? How are they different?
           </Text>
         </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            navigate('Answer', { question: answers.shimming })
+          }}
+        >
+          <Text
+            style={styles.text}
+          >
+          What is console shimming?
+          </Text>
+        </TouchableOpacity>
 
         <TouchableOpacity
           onPress={() => {

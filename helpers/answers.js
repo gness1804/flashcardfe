@@ -192,6 +192,11 @@ const answers = {
     main: 'In **two-way data binding**, UI fields are bound to model data dynamically such that when a UI field changes, the model data changes with it, while in **one-way data flow**, the model is the single source of truth. Changes in the UI trigger messages that signal user intent to the model. Only the model has the access to change the app’s state. The effect is that data always flows in a single direction, which makes it easier to understand.',
     firstPoint: 'Two-way data binding is particularly important in AngularJS.',
   },
+  shimming: {
+    main: 'A workaround when a browser has no or incomplete console support. Since the console is so critical for JS debugging, it\'s necessary to have access to one in a browser. Console shimming typically involves creating a dummy console and/or fallback functions for cases when browsers\' native consoles are insufficient.',
+    firstLinkName: 'More details here',
+    firstLinkURL: 'https://github.com/kayahr/console-shim',
+  },
 }
 
 export default answers
