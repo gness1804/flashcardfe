@@ -40,6 +40,7 @@ class Answer extends Component {
             firstLinkURL,
             secondLinkName,
             secondLinkURL,
+            image,
             } = this.state
     return (
       <ScrollView style={styles.container}>
@@ -62,6 +63,10 @@ class Answer extends Component {
         >
           {secondLinkName}
         </Text>
+        <Image
+          source={image}
+          style={styles.image}
+        />
 
         <TouchableOpacity
           onPress={() => {
