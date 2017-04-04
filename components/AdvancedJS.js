@@ -24,6 +24,17 @@ class AdvancedJS extends Component {
           What is event Bubbling/Delegation? Can you give an example?
           </Text>
         </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            navigate('Answer', { question: answers.promises })
+          }}
+        >
+          <Text
+            style={styles.text}
+          >
+          What are promises, and why use them?
+          </Text>
+        </TouchableOpacity>
 
         <TouchableOpacity
           onPress={() => {

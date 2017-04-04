@@ -163,6 +163,15 @@ const answers = {
     secondLinkName: 'MDN page on closures',
     secondLinkURL: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures',
   },
+  promises: {
+    main: 'A promise represents the eventual result of an asynchronous operation. It is a placeholder into which the successful result value or reason for failure will materialize.',
+    firstPoint: 'Why use promises? To avoid "callback hell"; improve readability; more easily handle complex chains of async operations.',
+    secondPoint: 'Promises wrap an async operation in an object that uses two key methods: .then() and .catch.(). The first can take arguments representing successful and unsuccessful result, while the second only takes an argument for an unsuccessful result. (For instance, if an API call fails.)',
+    firstLinkName: 'You\'re Missing the Point of Promises',
+    firstLinkURL: 'https://gist.github.com/domenic/3889970',
+    secondLinkName: 'What\'s the Point of Promises?',
+    secondLinkURL: 'http://www.telerik.com/blogs/what-is-the-point-of-promises',
+  },
 }
 
 export default answers
