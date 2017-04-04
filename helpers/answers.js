@@ -206,6 +206,11 @@ const answers = {
     firstLinkName: 'Lesson on storage types',
     firstLinkURL: 'https://github.com/turingschool/lesson_plans/blob/3ee469be5fdc94c926a88ca510106848b0339731/ruby_04-apis_and_scalability/client_side_storage.markdown',
   },
+  equality: {
+    main: 'The == is a loose or "Abstract" equality, which compares two value for equality, *after* converting both values to a common type. (Example: 2 == "2" is true). The === is a strict Equality Comparison, which compares two values for equality including type (no type conversion). ( 2 === "2" is false).',
+    firstLinkName: 'MDN Docs on Equality Comparison',
+    firstLinkURL: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness',
+  },
 }
 
 export default answers

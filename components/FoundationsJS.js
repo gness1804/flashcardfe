@@ -60,6 +60,17 @@ class FoundationsJS extends Component {
           Describe the difference between a cookie, sessionStorage and localStorage.
           </Text>
         </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            navigate('Answer', { question: answers.equality })
+          }}
+        >
+          <Text
+            style={styles.text}
+          >
+          What is the difference between == and ===?
+          </Text>
+        </TouchableOpacity>
 
         <TouchableOpacity
           onPress={() => {
