@@ -105,6 +105,17 @@ class FoundationsJS extends Component {
           What is AJAX and why is it useful?
           </Text>
         </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            navigate('Answer', { question: answers.functions })
+          }}
+        >
+          <Text
+            style={styles.text}
+          >
+          What is a function declaration versus function expression?
+          </Text>
+        </TouchableOpacity>
 
         <TouchableOpacity
           onPress={() => {

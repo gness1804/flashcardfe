@@ -236,6 +236,21 @@ const answers = {
     secondLinkName: 'MDN Docs on AJAX',
     secondLinkURL: 'https://developer.mozilla.org/en-US/docs/AJAX',
   },
+  functions: {
+    main: 'A function declaration is simply instantiating a function, like function foo () { console.log(\'foobar\') }. A function expression, by contrast, is a function that is either set equal to a variable (expresses a relationship) or an IIFE (Immediately Invoked Function Expression). Example: var foo = function(){ console.log(\'foobar\')} .',
+    firstPoint: 'What is the difference between them? Declarations are hoisted, while expressions are not. (See question on hoisting in the JavaScript Advanced section.) Another difference is that function declarations must be named, while function expressions can be anonymous.',
+  },
+  hoisting: {
+    main: 'Hoisting is JavaScript\'s behavior of putting declarations into memory before actually executing code. What this means is that one can write a var declaration below a function using that variable, and the code will still run because the var declaration is put into memory before the function is executed. Similarly, functions can be declared below where they are called, and hoisting works the same way (function expressions, however, are not hoisted, meaning that they must be instantiated before they are referenced).',
+    secondPoint: `
+    Example:
+    catName("Chloe");
+    function catName(name) { console.log("My cat's name is " + name); }
+    /* The result of the code above is: "My cat's name is Chloe" */
+    `,
+    firstLinkName: 'MDN Docs on Hoisting',
+    firstLinkURL: 'https://developer.mozilla.org/en-US/docs/Glossary/Hoisting',
+  },
 }
 
 export default answers

@@ -46,6 +46,17 @@ class AdvancedJS extends Component {
           What does CORS stand for and what issue does it address?
           </Text>
         </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            navigate('Answer', { question: answers.hoisting })
+          }}
+        >
+          <Text
+            style={styles.text}
+          >
+          What is hoisting, and why does it matter?
+          </Text>
+        </TouchableOpacity>
 
         <TouchableOpacity
           onPress={() => {
