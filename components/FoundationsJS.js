@@ -38,6 +38,17 @@ class FoundationsJS extends Component {
           Describe the difference between var, let and const
           </Text>
         </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            navigate('Answer', { question: answers.es6 })
+          }}
+        >
+          <Text
+            style={styles.text}
+          >
+          Name and describe some new features of ES6.
+          </Text>
+        </TouchableOpacity>
 
         <TouchableOpacity
           onPress={() => {

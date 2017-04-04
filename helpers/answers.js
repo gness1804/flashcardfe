@@ -172,6 +172,14 @@ const answers = {
     secondLinkName: 'What\'s the Point of Promises?',
     secondLinkURL: 'http://www.telerik.com/blogs/what-is-the-point-of-promises',
   },
+  es6: {
+    main: 'Key features: template literals, arrow functions, default parameters, destructuring, promises, let and const.',
+    firstPoint: 'For interviews, be able to say what each of these is, what advantages each offers over ES5, and which one is your favorite and why.',
+    firstLinkName: 'You Don\'t Know JS: ES6 & Beyond (full online book)',
+    firstLinkURL: 'https://github.com/getify/You-Dont-Know-JS/blob/master/es6%20&%20beyond/README.md#you-dont-know-js-es6--beyond',
+    secondLinkName: 'Learn ES2015 (guide from Babel)',
+    secondLinkURL: 'https://babeljs.io/learn-es2015/',
+  },
 }
 
 export default answers
