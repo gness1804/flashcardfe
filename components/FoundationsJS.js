@@ -83,6 +83,28 @@ class FoundationsJS extends Component {
           "i'm a lasagna hog".split("").reverse().join("");
           </Text>
         </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            navigate('Answer', { question: answers.useStrict })
+          }}
+        >
+          <Text
+            style={styles.text}
+          >
+          What is "use strict";? what are the advantages and disadvantages to using it?
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            navigate('Answer', { question: answers.ajax })
+          }}
+        >
+          <Text
+            style={styles.text}
+          >
+          What is AJAX and why is it useful?
+          </Text>
+        </TouchableOpacity>
 
         <TouchableOpacity
           onPress={() => {

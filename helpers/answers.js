@@ -222,6 +222,20 @@ const answers = {
     secondLinkName: 'Turing Lesson on CORS',
     secondLinkURL: 'http://frontend.turing.io/lessons/cors.html',
   },
+  useStrict: {
+    main: '"use strict" activates JavaScript\'s "strict mode". Strict mode catches errors that normal mode does not, adds some security improvements, and makes other changes to how code is run.',
+    firstPoint: 'Perhaps the most common use of strict mode is error catching. For example, in strict mode, an error is thrown if the user accidentally creates a global variable. Strict mode also catches problems such as attempting to assign to a non-writable property and assignment to a getter-only property. Strict mode also does not permit creating duplicate properties (keys) in an object.',
+    firstLinkName: 'For other uses of strict mode, see this MDN article.',
+    firstLinkURL: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode',
+  },
+  ajax: {
+    main: 'AJAX stands for Asynchronous JavaScript And XML. It is essentially just the process of using the XMLHttpRequest() object to request data, and then putting it onto the DOM with JS and HTML.',
+    firstPoint: 'AJAX allows asynchronous data processes to occur on a web page or in an app, such that the app can fetch or post data without refreshing the page and only the relevant part of a page can be updated when an external data request is made.',
+    firstLinkName: 'W3 Schools Intro to AJAX',
+    firstLinkURL: 'https://www.w3schools.com/xml/ajax_intro.asp',
+    secondLinkName: 'MDN Docs on AJAX',
+    secondLinkURL: 'https://developer.mozilla.org/en-US/docs/AJAX',
+  },
 }
 
 export default answers
