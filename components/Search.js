@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, TextInput, Button } from 'react-native';
 import styles from '../styles/Search-styles';
+import answers from '../helpers/answers';
 
 class Search extends Component {
   static navigationOptions = {
@@ -11,11 +12,33 @@ class Search extends Component {
     super()
     this.state = {
       search: '',
+      answersArr: [],
     }
   }
 
-  runSearch = () => {
+  getAnswersArray = () => {
+    const arr = []
+    for (let key in answers) { // eslint-disable-line
+      if (answers.hasOwnProperty(key)) { // eslint-disable-line
+        arr.push(answers[key])
+      }
+    }
+    return arr
+  }
 
+  filterSearchResults = (ans) => { // eslint-disable-line
+
+  }
+
+  runSearch = () => {
+    const promise = new Promise((resolve) => {
+      resolve(this.getAnswersArray())
+    })
+
+    promise
+    .then((result) => { this.setState({ answersArr: result }) })
+    .then(() => { this.filterSearchResults(this.state.answersArr) })
+    .catch((error) => { throw new Error(error) })
   }
 
   render() {
@@ -27,6 +50,7 @@ class Search extends Component {
           onChangeText={(text) => { this.setState({ search: text }) }}
         />
         <Button
+          style={styles.button}
           title="Run Search!"
           onPress={this.runSearch}
         />
