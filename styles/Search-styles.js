@@ -7,12 +7,13 @@ const styles = {
   cancel: {
     alignSelf: 'center',
     height: 40,
+    marginBottom: 10,
     marginTop: 20,
     width: 40,
   },
   button: {
-    marginBottom: 30,
-    marginTop: 30,
+    marginBottom: 10,
+    marginTop: 10,
     paddingLeft: 30,
     paddingRight: 30,
   },
