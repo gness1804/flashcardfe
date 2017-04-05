@@ -1,8 +1,12 @@
 import React from 'react';
-import { View, Linking, Image, TouchableOpacity } from 'react-native';
+import { View, Linking, Image, TouchableOpacity, Alert } from 'react-native';
 import styles from '../styles/Footer-styles';
 
 class Footer extends React.Component {
+
+  goToPRPage = () => {
+    Alert.alert('hello!')
+  }
 
   render() {
     return (
@@ -12,6 +16,14 @@ class Footer extends React.Component {
         >
           <Image
             source={require('../images/github.png')}
+            style={styles.github}
+          />
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={this.goToPRPage}
+        >
+          <Image
+            source={require('../images/plus.png')}
             style={styles.github}
           />
         </TouchableOpacity>
