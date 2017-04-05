@@ -1,6 +1,6 @@
 **Front End Interview Prep Mobile App**
 
-(Screenshot goes here)
+![](http://g.recordit.co/yaxYXeiuHv.gif)
 
 This app exists to help job seekers prepare for front end developer interviews. From the Home screen, you can select from three categories of questions: HTML, CSS, and JavaScript. These in turn are divided by category (typically difficulty). You can use this app to quiz yourself or others. Also, there is a section with links to useful interview-related sites and a section with questions to ask an interviewer. Good luck!
 
@@ -17,5 +17,9 @@ I hope to distribute this app in the Google Play Store and Apple Store soon.
 *Sources that I found useful:*
 
 [Tutorial on React Native Navigation](https://reactnavigation.org/docs/intro/)
+
 [Stack Overflow post with syntax on dynamically passing props to Image](https://stackoverflow.com/questions/29322973/whats-the-best-way-to-add-a-full-screen-background-image-in-react-native)
+
 [MDN Docs on Promise Chaining](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then)
+
+[React Native docs on alert object](https://facebook.github.io/react-native/docs/alert.html)
