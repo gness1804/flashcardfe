@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
   Image,
   Alert,
+  Linking,
 } from 'react-native';
 import styles from '../styles/Search-styles';
 import answers from '../helpers/answers';
@@ -60,6 +61,14 @@ class Search extends Component {
     .catch((error) => { throw new Error(error) })
   }
 
+  searchMDN = () => {
+    if (!this.state.search) {
+      Alert.alert('Oops, you must enter a search term.')
+      return
+    }
+    Linking.openURL(`https://developer.mozilla.org/en-US/search?q=${this.state.search}`)
+  }
+
   render() {
     const { navigate } = this.props.navigation
     return (
@@ -83,10 +92,17 @@ class Search extends Component {
         </TouchableOpacity>
         <View style={styles.button}>
           <Button
-            title="Run Search!"
+            title="Search this App"
             onPress={this.runSearch}
           />
         </View>
+        <View style={styles.button}>
+          <Button
+            title="Search MDN"
+            onPress={this.searchMDN}
+          />
+        </View>
+
         <TouchableOpacity
           onPress={() => {
             navigate('Home')
