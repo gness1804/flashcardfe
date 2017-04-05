@@ -5,7 +5,7 @@ import styles from '../styles/Header-styles';
 const Header = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.headline}>Front End Interview Prep</Text>
+      <Text style={styles.headline}>FlashcardFE</Text>
       <Text style={styles.attributionText}>
         Info courtesy of: &nbsp;
         <Text
