@@ -1,4 +1,4 @@
-**Front End Interview Prep Mobile App**
+**FlashcardFE: A Front End Interview Prep App**
 
 ![](http://g.recordit.co/yaxYXeiuHv.gif)
 
