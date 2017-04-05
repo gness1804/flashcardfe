@@ -26,6 +26,10 @@ class Search extends Component {
     return arr
   }
 
+  clearInputField = () => {
+    this.setState({ search: '' })
+  }
+
   runSearch = () => {
     const promise = new Promise((resolve) => {
       resolve(this.getAnswersArray())
@@ -40,6 +44,7 @@ class Search extends Component {
     .then((filtered) => {
       this.props.navigation.navigate('SearchResults', { results: filtered })
     })
+    .then(() => { this.clearInputField() })
     .catch((error) => { throw new Error(error) })
   }
 
@@ -51,6 +56,7 @@ class Search extends Component {
           <TextInput
             style={styles.box}
             onChangeText={(text) => { this.setState({ search: text }) }}
+            value={this.state.search}
           />
         </View>
         <View style={styles.button}>
