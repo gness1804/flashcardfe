@@ -15,6 +15,10 @@ class Footer extends React.Component {
             Linking.openURL('https://github.com/gness1804/front-end-interview-prep-app/pulls')
           },
         },
+        {
+          text: 'Cancel',
+          style: 'cancel',
+        },
       ],
     )
   }
@@ -27,7 +31,7 @@ class Footer extends React.Component {
         >
           <Image
             source={require('../images/github.png')}
-            style={styles.github}
+            style={styles.icon}
           />
         </TouchableOpacity>
         <TouchableOpacity
@@ -35,7 +39,7 @@ class Footer extends React.Component {
         >
           <Image
             source={require('../images/plus.png')}
-            style={styles.github}
+            style={styles.icon}
           />
         </TouchableOpacity>
       </View>
