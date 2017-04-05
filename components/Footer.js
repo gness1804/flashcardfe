@@ -5,7 +5,18 @@ import styles from '../styles/Footer-styles';
 class Footer extends React.Component {
 
   goToPRPage = () => {
-    Alert.alert('hello!')
+    Alert.alert(
+      'Make a Pull Request!',
+      'We love contributions! Click OK to go to a site where you can easily submit a pull request to add a question (or update/correction) to this project. Thanks for contributing!',
+      [
+        {
+          text: 'OK',
+          onPress: () => {
+            Linking.openURL('https://github.com/gness1804/front-end-interview-prep-app/pulls')
+          },
+        },
+      ],
+    )
   }
 
   render() {
