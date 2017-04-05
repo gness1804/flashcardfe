@@ -12,7 +12,7 @@ const Header = () => {
           onPress={() => { Linking.openURL('https://github.com/lrknaff/frontend-interview-prep') }}
           style={styles.link}
         >
-          Lacey's Repo
+          this repo
         </Text>
       </Text>
     </View>
