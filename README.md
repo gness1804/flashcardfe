@@ -2,6 +2,8 @@
 
 ![](http://g.recordit.co/yaxYXeiuHv.gif)
 
+[Check it out live! (Download of Expo app required.)](https://expo.io/@gness1804/bookmarker)
+
 This app exists to help job seekers prepare for front end developer interviews. From the Home screen, you can select from three categories of questions: HTML, CSS, and JavaScript. These in turn are divided by category (typically difficulty). You can use this app to quiz yourself or others. Also, there is a section with links to useful interview-related sites and a section with questions to ask an interviewer. Good luck!
 
 Pull requests are welcome! Make a pull request to this repo to add a question or a link or to add an update or correction to the information already existing in this app.
@@ -11,8 +13,9 @@ This app was bootstrapped with [Create React Native App](https://github.com/reac
 Tested on:
 * Android (real Nexus5X and Nexus 9) using the [Expo app](https://expo.io/).
 * iOS (virtual iPhone 6) using the [Expo XDE](https://docs.expo.io/versions/v15.0.0/introduction/installation.html).
+* My friend Nick's real iPhone using the Expo app and the [production link](https://expo.io/@gness1804/bookmarker).
 
-I hope to distribute this app in the Google Play Store and Apple Store soon.
+I hope to distribute this app in the Google Play Store and Apple Store soon. (In the meantime, you can use the app via the Expo app by clicking on the link at the top of this readme.)
 
 *Sources that I found useful:*
 
