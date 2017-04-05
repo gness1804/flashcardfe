@@ -1,5 +1,13 @@
 import React, { Component } from 'react';
-import { View, TextInput, Button, TouchableOpacity, Image } from 'react-native';
+import {
+  ScrollView,
+  View,
+  TextInput,
+  Button,
+  TouchableOpacity,
+  Image,
+  Alert,
+} from 'react-native';
 import styles from '../styles/Search-styles';
 import answers from '../helpers/answers';
 import homeButtonStyles from '../styles/HomeButton-Styles';
@@ -31,6 +39,10 @@ class Search extends Component {
   }
 
   runSearch = () => {
+    if (!this.state.search) {
+      Alert.alert('Oops, you must enter a search term.')
+      return
+    }
     const promise = new Promise((resolve) => {
       resolve(this.getAnswersArray())
     })
@@ -51,7 +63,7 @@ class Search extends Component {
   render() {
     const { navigate } = this.props.navigation
     return (
-      <View>
+      <ScrollView>
         <View style={styles.inputContainer}>
           <TextInput
             style={styles.box}
@@ -85,7 +97,7 @@ class Search extends Component {
             style={homeButtonStyles.homeButton}
           />
         </TouchableOpacity>
-      </View>
+      </ScrollView>
     );
   }
 
