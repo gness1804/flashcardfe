@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, TextInput, Button, TouchableOpacity, Image } from 'react-native';
+import { View, TextInput, Button, TouchableOpacity, Image } from 'react-native';
 import styles from '../styles/Search-styles';
 import answers from '../helpers/answers';
 import homeButtonStyles from '../styles/HomeButton-Styles';
@@ -49,8 +49,8 @@ class Search extends Component {
       <View>
         <View style={styles.inputContainer}>
           <TextInput
-          style={styles.box}
-          onChangeText={(text) => { this.setState({ search: text }) }}
+            style={styles.box}
+            onChangeText={(text) => { this.setState({ search: text }) }}
           />
         </View>
         <View style={styles.button}>

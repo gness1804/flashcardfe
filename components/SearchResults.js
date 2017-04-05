@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { ScrollView, TouchableOpacity, Image, View, Text } from 'react-native';
-// import styles from '../styles/Search-styles';
+import styles from '../styles/SearchResults-styles';
 import homeButtonStyles from '../styles/HomeButton-Styles';
 import SearchItem from './SearchItem';
 
@@ -22,13 +22,13 @@ class SearchResults extends Component {
     } else {
       display = (
         <View>
-          <Text>Oops, no results to display. Please try again.</Text>
+          <Text style={styles.errorMssg}>Oops, no results to display. Please try again.</Text>
         </View>
       )
     }
 
     return (
-      <ScrollView>
+      <ScrollView style={styles.container}>
         {display}
         <TouchableOpacity
           onPress={() => {
