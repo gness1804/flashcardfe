@@ -22,7 +22,11 @@ class SearchResults extends Component {
     } else {
       display = (
         <View>
-          <Text style={styles.errorMssg}>Oops, no results to display. Please try again.</Text>
+          <Text
+            style={styles.errorMssg}
+          >
+            Oops, no results to display. Please try again.
+          </Text>
         </View>
       )
     }
