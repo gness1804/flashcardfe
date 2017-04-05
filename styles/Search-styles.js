@@ -4,6 +4,12 @@ const styles = {
     borderWidth: 1,
     height: 40,
   },
+  cancel: {
+    alignSelf: 'center',
+    height: 40,
+    marginTop: 20,
+    width: 40,
+  },
   button: {
     marginBottom: 30,
     marginTop: 30,

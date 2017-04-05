@@ -59,6 +59,16 @@ class Search extends Component {
             value={this.state.search}
           />
         </View>
+        <TouchableOpacity
+          onPress={() => {
+            this.clearInputField()
+          }}
+        >
+          <Image
+            source={require('../images/cancel-circle.png')}
+            style={styles.cancel}
+          />
+        </TouchableOpacity>
         <View style={styles.button}>
           <Button
             title="Run Search!"
