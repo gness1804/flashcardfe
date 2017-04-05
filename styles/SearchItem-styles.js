@@ -6,6 +6,11 @@ const styles = {
     paddingLeft: 10,
     paddingRight: 10,
   },
+  link: {
+    color: 'rgb(53, 78, 212)',
+    marginBottom: 15,
+    textAlign: 'center',
+  },
   question: {
     fontWeight: '600',
     marginBottom: 10,

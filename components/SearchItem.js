@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Linking } from 'react-native';
 import styles from '../styles/SearchItem-styles';
 
 const SearchItem = ({ ...props }) => {
@@ -29,6 +29,18 @@ const SearchItem = ({ ...props }) => {
       </Text>
       <Text style={styles.text}>
         {props.sixthPoint}
+      </Text>
+      <Text
+        onPress={() => { Linking.openURL(`${props.firstLinkURL}`) }}
+        style={styles.link}
+      >
+        {props.firstLinkName}
+      </Text>
+      <Text
+        onPress={() => { Linking.openURL(`${props.secondLinkURL}`) }}
+        style={styles.link}
+      >
+        {props.secondLinkName}
       </Text>
     </View>
   );
