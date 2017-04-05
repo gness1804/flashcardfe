@@ -69,6 +69,14 @@ class Search extends Component {
     Linking.openURL(`https://developer.mozilla.org/en-US/search?q=${this.state.search}`)
   }
 
+  searchGoogle = () => {
+    if (!this.state.search) {
+      Alert.alert('Oops, you must enter a search term.')
+      return
+    }
+    Linking.openURL(`https://www.google.com/search?q=${this.state.search}`)
+  }
+
   render() {
     const { navigate } = this.props.navigation
     return (
@@ -100,6 +108,12 @@ class Search extends Component {
           <Button
             title="Search MDN"
             onPress={this.searchMDN}
+          />
+        </View>
+        <View style={styles.button}>
+          <Button
+            title="Search Google"
+            onPress={this.searchGoogle}
           />
         </View>
 
