@@ -63,7 +63,7 @@ class Search extends Component {
 
   searchMDN = () => {
     if (!this.state.search) {
-      Alert.alert('Oops, you must enter a search term.')
+      Alert.alert('Oops! You must enter a search term.')
       return
     }
     Linking.openURL(`https://developer.mozilla.org/en-US/search?q=${this.state.search}`)
