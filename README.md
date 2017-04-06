@@ -13,6 +13,7 @@ Pull requests are welcome! Make a pull request to this repo to add a question or
 This app was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app). Most of the info in the app comes from my colleague Lacey's [front end interview prep repo](https://github.com/lrknaff/frontend-interview-prep).
 
 Tested on:
+* Android (real Nexus5X and Nexus 9) using the APK
 * Android (real Nexus5X and Nexus 9) using the [Expo app](https://expo.io/).
 * iOS (virtual iPhone 6) using the [Expo XDE](https://docs.expo.io/versions/v15.0.0/introduction/installation.html).
 * My friend Nick's real iPhone using the Expo app and the [production link](https://expo.io/@gness1804/bookmarker).
