@@ -13,13 +13,12 @@ const answers = {
   attr: {
     id: 2,
     question: 'What are data attributes good for?',
-    main: 'data-* attributes allow us to store extra information on standard, semantic HTML elements.',
+    main: 'data-* attributes allow us to add information to regular HTML elements.',
     firstPoint: `Syntax:
     	<article
-      id="electriccars"
-      data-columns="3"
-      data-index-number="12314"
-      data-parent="cars">
+      id="cats"
+      data-columns="4"
+      data-parent="animals">
 ...
 </article>`,
     firstLinkName: 'CSS Tricks: Attribute Selectors',
@@ -30,22 +29,24 @@ const answers = {
   boxModel: {
     id: 3,
     question: 'What is the box model?',
-    main: 'Each element is a rectangular box. CSS leverages “the box model” to control layout and design. An HTML element is comprised of its content and the margins, borders, padding surrounding it. Boxes are “stacked” in the order they appear in your HTML. You can stack them horizontally, vertically, and in the z-plane.',
+    main: 'CSS makes each element on a page a rectangular box. This determines how browsers handle things like margins, borders, and padding. By default, browsers "stack" elements from the upper left corner of the page.',
+    firstLinkName: 'MDN Docs on Box Model',
+    firstLinkURL: 'https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model',
     image: require('../images/box-model.png'),
   },
   inlineBlock: {
     id: 4,
     question: 'What is the difference between inline, inline-block, and block elements?',
-    main: '**Block** elements take up the full width available with a line break before and after it. `<h1>, <p>, <li>, and <div>, while  **Inline** elements one take up as much width as necessary, cannot accept width and height values and do not force line breaks. `<a>, <span>`',
-    firstPoint: 'What about **inline-block** versus **inline**? They are basically the same except that inline-block elements can take a width and a height, while inline elements cannot.',
+    main: 'Block elements take up the full width available, and thus multiple block elements "stack" on top of each other by default. Inline and inline-block elements stack next to each other, as they do not take up the available width. Inline-block is the same as inline except that the former can have a height and width.',
     firstLinkName: 'Stack Overflow post on inline versus inline-block',
     firstLinkURL: 'https://stackoverflow.com/questions/8969381/what-is-the-difference-between-display-inline-and-display-inline-block',
   },
   zIndex: {
     id: 5,
     question: 'What is the z-index? How is it used?',
-    main: 'The z-index specifies the stacking order of positioned elements. Lowest z-index will be on the bottom and highest on the top',
-    firstPoint: 'It can take the following values: **Auto**: Sets stack order equal to its parents; **Number**: Orders the stack order; **Initial**: Sets to default value of 0; and **Inherit**: Inherits from its parent element.',
+    main: 'The z-index refers to the order in which elements are stacked on top of each other (the z axis being the 3d plane coming out of the page). Higher z-indexed elements occlude lower z-indexed elements.',
+    firstLinkName: 'MDN Docs on z-index',
+    firstLinkURL: 'https://developer.mozilla.org/en-US/docs/Web/CSS/z-index',
   },
   positioning: {
     id: 6,
