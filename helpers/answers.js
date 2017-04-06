@@ -2,11 +2,13 @@ const answers = {
   aria: {
     id: 1,
     question: 'What is ARIA? How does it aid in accessibility?',
-    main: 'Accessibility in Web development means enabling as many people as possible to use Web sites, even when those people’s abilities are limited in some way.',
+    main: 'According to MDN: "Accessibility in Web development means enabling as many people as possible to use Web sites, even when those people’s abilities are limited in some way."',
     firstPoint: 'Aria stands for Accessible Rich Internet Application.',
-    secondPoint: 'Semantic HTML: Use elements such as <nav>, <button>, <header>, <aside> that help clarify what part of html page someone is focused on.',
-    thirdPoint: 'Alt Tags: Use on images. Be verbose. <img src="mountain.jpg" alt="The cascade mountains at sunset in January" />',
-    fourthPoint: 'ARIA Roles: Define the purpose of an element. Each element can only have one ARIA role at a time',
+    secondPoint: 'One method of increasing access to web content is via semantic HTML. Elements such as <nav>, <button>, <header>, and <aside> help screen readers know what a part of a page is and what it is doing.',
+    thirdPoint: 'For images, always use alt tags. These convey to screen readers what an image is for those who cannot see the image themselves. Be verbose--the better the description is, the more the user will get out of the image! Example: <img src="mountain.jpg" alt="The snowy mountain surrounded by a violet sunset." />',
+    fourthPoint: 'Use ARIA roles to define the purpose of an element. Each element can only have one ARIA role at a time.',
+    firstLinkName: 'MDN Docs on Accessibility',
+    firstLinkURL: 'https://developer.mozilla.org/en-US/docs/Web/Accessibility',
   },
   attr: {
     id: 2,
