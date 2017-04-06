@@ -1,10 +1,12 @@
 **FlashcardFE: A Front End Interview Prep App**
 
-![](https://media.giphy.com/media/pbWPfgnZWm1AQ/giphy.gif)
+![Screenshot](images/flashcard-fe-ss.png)
 
 [Check it out live! (Download of Expo app required.)](https://expo.io/@gness1804/bookmarker)
 
 This app exists to help job seekers prepare for front end developer interviews. From the Home screen, you can select from three categories of questions: HTML, CSS, and JavaScript. These in turn are divided by category (typically difficulty). You can use this app to quiz yourself or others. Also, there is a section with links to useful interview-related sites and a section with questions to ask an interviewer. Good luck!
+
+The app also contains a powerful search feature. In addition to searching the app for a key term, the user can also search MDN and Google for this term from within the app.
 
 Pull requests are welcome! Make a pull request to this repo to add a question or a link or to add an update or correction to the information already existing in this app.
 
