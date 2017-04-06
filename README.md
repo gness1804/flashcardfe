@@ -1,6 +1,6 @@
 **FlashcardFE: A Front End Interview Prep App**
 
-![](http://g.recordit.co/yaxYXeiuHv.gif)
+![](https://media.giphy.com/media/pbWPfgnZWm1AQ/giphy.gif)
 
 [Check it out live! (Download of Expo app required.)](https://expo.io/@gness1804/bookmarker)
 
