@@ -1,5 +1,15 @@
 {
   "expo": {
-    "sdkVersion": "15.0.0"
-  }
+    "sdkVersion": "15.0.0",
+    "name": "FlashcardFE",
+    "icon": "images/power-icon.png",
+    "version": "1.0.0",
+    "slug": "bookmarker",
+    "android": {
+      "package": "com.grahamnessler.bookmarker",
+    },
+    "ios": {
+      "bundleIdentifier": "com.grahamnessler.bookmarker",
+    }
+  },
 }
