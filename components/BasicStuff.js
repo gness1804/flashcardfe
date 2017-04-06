@@ -69,7 +69,7 @@ class BasicStuff extends Component {
           <Text
             style={styles.text}
           >
-          Explain the 3 main ways to apply CSS styles to a Web page:
+          Explain the 3 main ways to apply CSS styles to a Web page.
         </Text>
         </TouchableOpacity>
         <TouchableOpacity

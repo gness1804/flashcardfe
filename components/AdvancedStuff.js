@@ -90,8 +90,8 @@ class AdvancedStuff extends Component {
           <Text
             style={styles.text}
           >
-          What are the different ways to visually hide
-          content (and make it available only for screen readers)?
+          What are the different ways to visually hide content
+          (while ideally still making it accessible to screen readers)?
         </Text>
         </TouchableOpacity>
 
