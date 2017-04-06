@@ -21,7 +21,7 @@ class IntermediateJS extends Component {
           <Text
             style={styles.text}
           >
-          What is the difference between Prototypal and Class inheritance?
+          What is the difference between prototypal and class inheritance?
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
@@ -32,7 +32,7 @@ class IntermediateJS extends Component {
           <Text
             style={styles.text}
           >
-          Why are Functions and Arrays considered Objects in JS?
+          Why are functions and arrays considered objects in JS?
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
