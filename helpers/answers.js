@@ -183,29 +183,29 @@ const answers = {
     id: 21,
     question: 'What is a callback?',
     main: 'A callback is a function that is passed to another function as a parameter. It is passed as an argument, not as an executed function.',
-    firstPoint: 'Common use cases for callbacks include event listeners; asynchronous tasks; and setTimeout/setInterval methods.',
-    secondPoint: 'If you stop and think about it, you are probably often using callbacks without even realizing it!',
+    firstPoint: 'Common use cases for callbacks include event listeners, asynchronous tasks, and setTimeout/setInterval methods.',
+    secondPoint: 'If you stop and think about it, you are probably using callbacks often without even realizing it!',
   },
   delegation: {
     id: 22,
-    question: 'What is event Bubbling/Delegation? Can you give an example?',
-    main: 'In JS, an event received by an element (like a "click" event listener) does not stop with that one element. It moves to other elements like the parent, and other ancestors of the element. Event delegation allows us to attach a single event listener to a parent element, that will fire for all descendants matching a selector, whether those descendants exist now or are added in the future.',
-    firstPoint: 'This uses event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. For instance, when you click on an li (like a button), the click event registers on the entire ul (the list of buttons.)',
-    secondPoint: 'Event delegation is often used for dynamically created elements (like buttons created in a div that appears on the page only when the user enters in some data). Because the parent (or grandparent) element originally existed, event propagation can be used to "bubble" the click event down to the dynamically created child.',
-    thirdPoint: `
-    Example of using event delegation (The second, selector parameter tells the handler to listen for the specified event, and when it hears it, checks to see if the triggering element for that event matches the second parameter):
+    question: 'What is event bubbling/delegation? Can you give an example?',
+    main: 'In JS, an event received by an element (like a "click" event listener) is registered not only on that element but also on its parents and descendants. According to the jQuery docs: "Event delegation allows us to attach a single event listener, to a parent element, that will fire for all descendants matching a selector, whether those descendants exist now or are added in the future."',
+    firstPoint: 'Event delegation is often used for dynamically created elements (like buttons created in a div that appears on the page only when the user enters in some data). Because the parent (or grandparent) element originally existed, event propagation can be used to "bubble" the click event down to the dynamically created child.',
+    secondPoint: `
+    Example from the jQuery docs:
       // Attach a delegated event handler
       $( "#list" ).on( "click", "a", function( event ) {
       event.preventDefault();
       console.log( $( this ).text() );
       });
     `,
+    firstLinkName: 'More Info from jQuery Docs',
+    firstLinkURL: 'https://learn.jquery.com/events/event-delegation/',
   },
   closure: {
     id: 23,
     question: 'What is a closure?',
-    main: 'A closure is the combination of a function and the lexical environment (or simply "environment") within which that function was declared.',
-    firstPoint: 'An inner function that has access to the outer (enclosing) function\'s variables -- scope chain.',
+    main: 'A closure is when a function has access to data (variables or other functions) at a higher level within its scope.',
     firstLinkName: 'Explanation from JavaScript is Sexy',
     firstLinkURL: 'http://javascriptissexy.com/understand-javascript-closures-with-ease/',
     secondLinkName: 'MDN page on closures',
@@ -214,9 +214,9 @@ const answers = {
   promises: {
     id: 24,
     question: 'What are promises, and why use them?',
-    main: 'A promise represents the eventual result of an asynchronous operation. It is a placeholder into which the successful result value or reason for failure will materialize.',
-    firstPoint: 'Why use promises? To avoid "callback hell"; improve readability; more easily handle complex chains of async operations.',
-    secondPoint: 'Promises wrap an async operation in an object that uses two key methods: .then() and .catch.(). The first can take arguments representing successful and unsuccessful result, while the second only takes an argument for an unsuccessful result. (For instance, if an API call fails.)',
+    main: 'A promise is a wrapper for an asynchronous (async) task, such as making an API call. Promises return two results, one for a successful operation and the second for failure.',
+    firstPoint: 'Promises enable the programmer to more effectively handle async operations by means of specifying what happens depending on the result of the operation. With promises, some of the frustration of async timing is eliminated.',
+    secondPoint: 'Promises use two main methods: .then() and .catch(). The first can take arguments representing a successful and an unsuccessful result, while the second only takes an argument for an unsuccessful result (for instance, if an API call fails.)',
     firstLinkName: 'You\'re Missing the Point of Promises',
     firstLinkURL: 'https://gist.github.com/domenic/3889970',
     secondLinkName: 'What\'s the Point of Promises?',

@@ -21,7 +21,7 @@ class AdvancedJS extends Component {
           <Text
             style={styles.text}
           >
-          What is event Bubbling/Delegation? Can you give an example?
+          What is event bubbling/delegation? Can you give an example?
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
