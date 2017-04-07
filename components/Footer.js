@@ -34,14 +34,6 @@ class Footer extends React.Component {
     return (
       <View style={styles.container}>
         <TouchableOpacity
-          onPress={() => { Linking.openURL('https://github.com/gness1804/front-end-interview-prep-app') }}
-        >
-          <Image
-            source={require('../images/github.png')}
-            style={styles.icon}
-          />
-        </TouchableOpacity>
-        <TouchableOpacity
           onPress={this.goToPRPage}
         >
           <Image

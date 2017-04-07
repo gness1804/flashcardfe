@@ -7,7 +7,7 @@ const styles = {
   },
   icon: {
     height: 40,
-    marginRight: 20,
+    marginRight: 30,
     width: 40,
   },
 }

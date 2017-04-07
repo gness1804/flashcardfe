@@ -1,6 +1,6 @@
 **FlashcardFE: A Front End Interview Prep App**
 
-![Screenshot](images/flashcard-fe-ss.png)
+![Screenshot](images/flashcardfe-ss-updated.png)
 
 [Check it out live! (Download of Expo app required.)](https://expo.io/@gness1804/bookmarker)
 
