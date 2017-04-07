@@ -282,7 +282,7 @@ const answers = {
     id: 32,
     question: 'What does CORS stand for and what issue does it address?',
     main: 'CORS stands for Cross-Origin Resource Sharing. It is a mechanism in modern browsers to prevent unauthorized access to web content.',
-    firstPoint: 'CORS adds a header to an HTTP response that looks like: Access-Control-Allow-Origin: http://www.example.com. This prevents domains outside of example.com from accessing this site\'s resources.',
+    firstPoint: 'CORS adds a header to an HTTP response that looks like: Access-Control-Allow-Origin: http://www.foobar.com. This prevents domains outside of foobar.com from accessing this site\'s resources.',
     firstLinkName: 'MDN Docs on CORS',
     firstLinkURL: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS',
     secondLinkName: 'Turing Lesson on CORS',
@@ -290,7 +290,7 @@ const answers = {
   },
   useStrict: {
     id: 33,
-    question: 'What is "use strict";? what are the advantages and disadvantages to using it?',
+    question: 'What is "use strict"? What are the advantages and disadvantages to using it?',
     main: '"use strict" activates JavaScript\'s "strict mode". Strict mode catches errors that normal mode does not, adds some security improvements, and makes other changes to how code is run.',
     firstPoint: 'Perhaps the most common use of strict mode is error catching. For example, in strict mode, an error is thrown if the user accidentally creates a global variable. Strict mode also catches problems such as attempting to assign to a non-writable property and assignment to a getter-only property. Strict mode also does not permit creating duplicate properties (keys) in an object.',
     firstLinkName: 'For other uses of strict mode, see this MDN article.',
@@ -316,7 +316,7 @@ const answers = {
     id: 36,
     question: 'What is hoisting, and why does it matter?',
     main: 'Hoisting is JavaScript\'s behavior of putting declarations into memory before actually executing code. What this means is that one can write a var declaration below a function using that variable, and the code will still run because the var declaration is put into memory before the function is executed. Similarly, functions can be declared below where they are called, and hoisting works the same way (function expressions, however, are not hoisted, meaning that they must be instantiated before they are referenced).',
-    secondPoint: `
+    firstPoint: `
     Example:
     catName("Chloe");
     function catName(name) { console.log("My cat's name is " + name); }
