@@ -2,7 +2,7 @@
 
 ![Screenshot](images/flashcard-fe-phone-main.png)
 
-[https://play.google.com/store/apps/details?id=com.grahamnessler.bookmarker&hl=en](Get it in the Google Play Store!)
+[Get it in the Google Play Store!](https://play.google.com/store/apps/details?id=com.grahamnessler.bookmarker&hl=en)
 
 iOS version coming soon! (In the meantime, you can download the app through [this link](https://expo.io/@gness1804/bookmarker)(download of Expo app required.))
 
