@@ -2,7 +2,9 @@
 
 ![Screenshot](images/flashcard-fe-phone-main.png)
 
-[Check it out live! (Download of Expo app required.)](https://expo.io/@gness1804/bookmarker)
+[https://play.google.com/store/apps/details?id=com.grahamnessler.bookmarker&hl=en](Get it in the Google Play Store!)
+
+iOS version coming soon! (In the meantime, you can download the app through [this link](https://expo.io/@gness1804/bookmarker)(download of Expo app required.))
 
 This app exists to help job seekers prepare for front end developer interviews. From the Home screen, you can select from three categories of questions: HTML, CSS, and JavaScript. These in turn are divided by category (typically difficulty). You can use this app to quiz yourself or others. Also, there is a section with links to useful interview-related sites and a section with questions to ask an interviewer. Good luck!
 
@@ -17,8 +19,6 @@ Tested on:
 * Android (real Nexus5X and Nexus 9) using the [Expo app](https://expo.io/).
 * iOS (virtual iPhone 6) using the [Expo XDE](https://docs.expo.io/versions/v15.0.0/introduction/installation.html).
 * My friend Nick's real iPhone using the Expo app and the [production link](https://expo.io/@gness1804/bookmarker).
-
-I hope to distribute this app in the Google Play Store and Apple Store soon. (In the meantime, you can use the app via the Expo app by clicking on the link at the top of this readme.)
 
 *Sources that I found useful:*
 
