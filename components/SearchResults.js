@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { ScrollView, TouchableOpacity, Image, View, Text } from 'react-native';
+import { ScrollView, View, Text } from 'react-native';
 import styles from '../styles/SearchResults-styles';
-import homeButtonStyles from '../styles/HomeButton-Styles';
 import SearchItem from './SearchItem';
 
 class SearchResults extends Component {
@@ -10,7 +9,6 @@ class SearchResults extends Component {
   }
 
   render() {
-    const { navigate } = this.props.navigation
     const { results } = this.props.navigation.state.params
     let display
     if (results.length) {
@@ -34,16 +32,6 @@ class SearchResults extends Component {
     return (
       <ScrollView style={styles.container}>
         {display}
-        <TouchableOpacity
-          onPress={() => {
-            navigate('Home')
-          }}
-        >
-          <Image
-            source={require('../images/home.png')}
-            style={homeButtonStyles.homeButton}
-          />
-        </TouchableOpacity>
       </ScrollView>
     );
   }

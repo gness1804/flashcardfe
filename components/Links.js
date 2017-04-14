@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 import {
   ScrollView,
   TouchableOpacity,
-  Image,
   Linking,
   Text,
   } from 'react-native';
 import styles from '../styles/Links-styles';
-import homeButtonStyles from '../styles/HomeButton-Styles';
 
 class Links extends Component {
   static navigationOptions = {
@@ -15,7 +13,6 @@ class Links extends Component {
   }
 
   render() {
-    const { navigate } = this.props.navigation
     return (
       <ScrollView style={styles.container}>
         <TouchableOpacity
@@ -105,17 +102,6 @@ class Links extends Component {
           >
           Node.js Interview Questions and Answers (2017 Edition)
         </Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity
-          onPress={() => {
-            navigate('Home')
-          }}
-        >
-          <Image
-            source={require('../images/home.png')}
-            style={homeButtonStyles.homeButton}
-          />
         </TouchableOpacity>
       </ScrollView>
     );

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { Text, ScrollView, TouchableOpacity, Image } from 'react-native';
+import { Text, ScrollView } from 'react-native';
 import styles from '../styles/InterviewQuestions-Styles';
-import homeButtonStyles from '../styles/HomeButton-Styles';
 
 class InterviewQuestions extends Component {
   static navigationOptions = {
@@ -9,7 +8,6 @@ class InterviewQuestions extends Component {
   }
 
   render() {
-    const { navigate } = this.props.navigation
     return (
       <ScrollView style={styles.container}>
         <Text style={styles.sectionHeader}>General Questions:</Text>
@@ -50,17 +48,6 @@ class InterviewQuestions extends Component {
         <Text style={styles.text}>
         (As appropriate) How does your company fit in with/contribute
         to the larger community?</Text>
-
-        <TouchableOpacity
-          onPress={() => {
-            navigate('Home')
-          }}
-        >
-          <Image
-            source={require('../images/home.png')}
-            style={homeButtonStyles.homeButton}
-          />
-        </TouchableOpacity>
       </ScrollView>
     );
   }
