@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { ScrollView, Text, Linking, TouchableOpacity, Image } from 'react-native';
+import { ScrollView, Text, Linking, Image } from 'react-native';
 import styles from '../styles/Answer-styles';
-import homeButtonStyles from '../styles/HomeButton-Styles';
 
 class Answer extends Component {
   static navigationOptions = {
@@ -67,17 +66,6 @@ class Answer extends Component {
           source={image}
           style={styles.image}
         />
-
-        <TouchableOpacity
-          onPress={() => {
-            navigate('Home')
-          }}
-        >
-          <Image
-            source={require('../images/home.png')}
-            style={homeButtonStyles.homeButton}
-          />
-        </TouchableOpacity>
       </ScrollView>
     );
   }
