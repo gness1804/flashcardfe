@@ -27,7 +27,6 @@ class Answer extends Component {
   }
 
   render() {
-    const { navigate } = this.props.navigation
     const { main,
             firstPoint,
             secondPoint,
